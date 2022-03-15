@@ -1,5 +1,15 @@
 # Automated Computerised System
 
+## Table of Contents
+- [Overview](#Overview)
+- [Problem domain](#Problem domain)
+- [Motivation](#Motivation)
+- [Our Solution](#Our Solution)
+- [Solution Architecture](#Solution Architecture)
+- [User Story](#User Story)
+- [Our Approach](#Our Approach)
+- [Links](#Product Owners)
+
 ## Overview
 
 This project is proposed to develop an automated system for Victa Towers (Pvt) Ltd to improve
