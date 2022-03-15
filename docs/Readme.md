@@ -1,9 +1,8 @@
-# Automated Computerised System
+# Automated Computerized System for a startup Manufacturing and Distribution Company
 
 ## Table of Contents
 - [Overview](#overview)
 - [Problem domain](#problem-domain)
-- [Motivation](#motivation)
 - [Our Solution](#our-solution)
 - [Solution Architecture](#solution-architecture)
 - [User Story](#user-story)
