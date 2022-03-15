@@ -38,6 +38,10 @@ distribution process
 - Tracking sales and finance.
 - Machine learning model to predict future sales
 
+## Solution Architecture 
+
+![Solution Architecture](/Solution Archi.png "Solution Archi")
+
  
 ## Product Owners 
 
