@@ -45,7 +45,22 @@ distribution process
 ## User Story
 
 ![User Story](/user_story.png)
- 
+
+## Measuring Matrix 
+
+- Delivery to Receive ratio tracking
+- Percentage of product tracking via the map 
+- Accuracy in the future predictions
+- Comparison of logistic expenses before and after the implementation    
+
+## Our Approach 
+
+- Development of the basic website with CRUD operations 
+- Integrating the complex parts like third party APIs 
+- Integrating the DM and ML part
+- Improvements of Website and ML Model   
+
+
 ## Product Owners 
 
 - Dr. Janaka Alawathugoda, Department of Computer Engineering, University of Peradeniya
