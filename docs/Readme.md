@@ -2,13 +2,13 @@
 
 ## Table of Contents
 - [Overview](#Overview)
-- [Problem domain](#Problem domain)
+- [Problem domain](#Problem-domain)
 - [Motivation](#Motivation)
-- [Our Solution](#Our Solution)
-- [Solution Architecture](#Solution Architecture)
-- [User Story](#User Story)
-- [Our Approach](#Our Approach)
-- [Links](#Product Owners)
+- [Our Solution](#Our-Solution)
+- [Solution Architecture](#Solution-Architecture)
+- [User Story](#User-Story)
+- [Our Approach](#Our-Approach)
+- [Links](#Product-Owners)
 
 ## Overview
 
@@ -50,11 +50,11 @@ distribution process
 
 ## Solution Architecture 
 
-![Solution Architecture](/images/solution_architecture.png)
+![Solution Architecture](https://github.com/cepdnaclk/e17-co328-Automated_Computerised_System/blob/main/docs/images/solution_architecture.png)
 
 ## User Story
 
-![User Story](/images/user_story.png)
+![User Story](https://github.com/cepdnaclk/e17-co328-Automated_Computerised_System/blob/main/docs/images/user_story.png)
 
 ## Measuring Matrix 
 
