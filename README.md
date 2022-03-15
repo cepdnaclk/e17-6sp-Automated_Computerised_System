@@ -1,4 +1,15 @@
-# e17-co328-Automated_Computerised_System
+# Automated Computerized System for a startup Manufacturing and Distribution Company
+
+[To Webpage](https://cepdnaclk.github.io/e17-co328-Automated_Computerised_System/)
+
+## Table of Contents
+- [Overview](#overview)
+- [Problem domain](#problem-domain)
+- [Our Solution](#our-solution)
+- [Solution Architecture](#solution-architecture)
+- [User Story](#user-story)
+- [Our Approach](#our-approach)
+- [Links](#product-owners)
 
 ## Overview
 
@@ -40,11 +51,11 @@ distribution process
 
 ## Solution Architecture 
 
-![Solution Architecture](/solution_architecture.png)
+![Solution Architecture](https://github.com/cepdnaclk/e17-co328-Automated_Computerised_System/blob/main/docs/images/solution_architecture.png)
 
 ## User Story
 
-![User Story](/user_story.png)
+![User Story](https://github.com/cepdnaclk/e17-co328-Automated_Computerised_System/blob/main/docs/images/user_story.png)
 
 ## Measuring Matrix 
 
