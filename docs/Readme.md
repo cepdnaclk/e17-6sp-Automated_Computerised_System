@@ -1,14 +1,14 @@
 # Automated Computerised System
 
 ## Table of Contents
-- [Overview](#Overview)
-- [Problem domain](#Problem-domain)
-- [Motivation](#Motivation)
-- [Our Solution](#Our-Solution)
-- [Solution Architecture](#Solution-Architecture)
-- [User Story](#User-Story)
-- [Our Approach](#Our-Approach)
-- [Links](#Product-Owners)
+- [Overview](#overview)
+- [Problem domain](#problem-domain)
+- [Motivation](#motivation)
+- [Our Solution](#our-solution)
+- [Solution Architecture](#solution-architecture)
+- [User Story](#user-story)
+- [Our Approach](#our-approach)
+- [Links](#product-owners)
 
 ## Overview
 
