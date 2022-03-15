@@ -1,4 +1,4 @@
-# e17-co328-Automated_Computerised_System
+# Automated Computerised System
 
 ## Overview
 
