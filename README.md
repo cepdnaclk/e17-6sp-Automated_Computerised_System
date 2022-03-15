@@ -40,7 +40,7 @@ distribution process
 
 ## Solution Architecture 
 
-![Solution Architecture](Solution Archi.png)
+![Solution Architecture](/Solution_Archi.png)
 
  
 ## Product Owners 
