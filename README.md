@@ -22,7 +22,7 @@ distribution process
 - Dr. Prasanga Mantilaka
 
 ## Project Developers 
-
+- Mr.Amila Indika(Scrum Master)
 - [Mr.PGAP Gallage](https://github.com/AdithyaGallage)
 - [Mr.KHSP Kodagoda](https://github.com/Sandun666) 
 - [Mr.WMLP Wijesinghe](https://github.com/Wijesinghe0141)
