@@ -73,7 +73,7 @@ distribution process
  
 ## Project Developers 
 
-- [Mr.PGAP Gallage - E/17/091](https://github.com/AdithyaGallage)
-- [Mr.KHSP Kodagoda - E/17/168](https://github.com/Sandun666) 
-- [Mr.WMLP Wijesinghe - E/17/405](https://github.com/Wijesinghe0141)
-- [Mr.KPCDB Jayaweera - E/17/144](https://github.com/Dadoright) 
+- E/17/091 : Mr.Gallage P.G.A.P. nbsp nbsp nbsp nbsp [github](https://github.com/AdithyaGallage) [e17091@eng.pdn.ac.lk](mailto:e17091@eng.pdn.ac.lk)
+- E/17/144 : Mr.Jayaweera K.P.C.D.B. [github](https://github.com/Dadoright) [e17144@eng.pdn.ac.lk](mailto:e17144@eng.pdn.ac.lk)
+- E/17/168 : Mr.Kodagoda K.H.S.P. nbsp nbsp nbsp [github](https://github.com/Sandun666) [e17168@eng.pdn.ac.lk](mailto:e17168@eng.pdn.ac.lk)
+- E/17/405 : Mr.Wijesinghe W.D.L.P. nbsp  [github](https://github.com/Wijesinghe0141) [e17405@eng.pdn.ac.lk](mailto:e17405@eng.pdn.ac.lk)
