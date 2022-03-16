@@ -83,11 +83,11 @@ distribution process
 
 ## Scrum Master
 
-- Mr.Amila Indika
+- Mr.Amila Indika : [amilaindika@eng.pdn.ac.lk](mailto:amilaindika@eng.pdn.ac.lk)
  
 ## Project Developers 
 
-- E/17/091 : Mr.Gallage P.G.A.P. [e17091@eng.pdn.ac.lk](mailto:e17091@eng.pdn.ac.lk)
-- E/17/144 : Mr.Jayaweera K.P.C.D.B. [e17144@eng.pdn.ac.lk](mailto:e17144@eng.pdn.ac.lk)\]
-- E/17/168 : Mr.Kodagoda K.H.S.P. [e17168@eng.pdn.ac.lk](mailto:e17168@eng.pdn.ac.lk)\]
-- E/17/405 : Mr.Wijesinghe W.D.L.P. [e17405@eng.pdn.ac.lk](mailto:e17405@eng.pdn.ac.lk)\]
+- E/17/091 : Mr.Gallage P.G.A.P. : [e17091@eng.pdn.ac.lk](mailto:e17091@eng.pdn.ac.lk)
+- E/17/144 : Mr.Jayaweera K.P.C.D.B. : [e17144@eng.pdn.ac.lk](mailto:e17144@eng.pdn.ac.lk)
+- E/17/168 : Mr.Kodagoda K.H.S.P. : [e17168@eng.pdn.ac.lk](mailto:e17168@eng.pdn.ac.lk)
+- E/17/405 : Mr.Wijesinghe W.D.L.P. : [e17405@eng.pdn.ac.lk](mailto:e17405@eng.pdn.ac.lk)
