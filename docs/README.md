@@ -49,11 +49,11 @@ distribution process
 
 ## Solution Architecture 
 
-![Solution Architecture](/images/solution_architecture.png)
+![Solution Architecture](images/solution_architecture.png)
 
 ## User Story
 
-![User Story](/images/user_story.png)
+![User Story](images/user_story.png)
 
 ## Measuring Matrix 
 
