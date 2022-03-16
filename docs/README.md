@@ -57,7 +57,7 @@ distribution process
 
 ## Proposed UI
 
-![Sign In Page](../docs/user_interface/sign_in.jpg "Sign In Page")  |  ![Sign Up Page](../docs/user_interface/sign_up.jpg "Sign Up Page")
+![Sign In Page](../user_interface/sign_in.jpg "Sign In Page")  |  ![Sign Up Page](../user_interface/sign_up.jpg "Sign Up Page")
 
 ## Measuring Matrix 
 
