@@ -55,6 +55,10 @@ distribution process
 
 ![User Story](images/user_story.png)
 
+## Proposed UI
+
+![Sign In Page](../docs/user_interface/sign-in-100.jpg "Sign In Page")  |  ![Sign Up Page](../docs/user_interface/sign-up-100.jpg "Sign Up Page")
+
 ## Measuring Matrix 
 
 - Delivery to Receive ratio tracking
