@@ -57,7 +57,11 @@ distribution process
 
 ## Proposed UI
 
-![Sign In Page](../user_interface/sign_in.jpg "Sign In Page")  |  ![Sign Up Page](../user_interface/sign_up.jpg "Sign Up Page")
+![Sign In Page](images/UI/sign_in.jpg "Sign In Page")
+![Sign Up Page](images/UI/sign_up.jpg "Sign Up Page")
+![Home Page](images/UI/homepage.jpg "Home Page")
+![Predictions Page](images/UI/predictions.jpg "Predictions Page")
+![Add Data Page](images/UI/add_data.jpg "Add Data Page")
 
 ## Measuring Matrix 
 
@@ -86,7 +90,7 @@ distribution process
  
 ## Project Developers 
 
-- E/17/091 : Mr.Gallage P.G.A.P. &nbsp; &nbsp; &nbsp; &nbsp; \[[github](https://github.com/AdithyaGallage) ; [e17091@eng.pdn.ac.lk](mailto:e17091@eng.pdn.ac.lk)\]
+- E/17/091 : Mr.Gallage P.G.A.P. &nbsp; &nbsp; &nbsp; &nbsp; [[github](images/icons/github.png =50*50)](https://github.com/AdithyaGallage) ; [e17091@eng.pdn.ac.lk](mailto:e17091@eng.pdn.ac.lk)
 - E/17/144 : Mr.Jayaweera K.P.C.D.B. &nbsp; \[[github](https://github.com/Dadoright) ; [e17144@eng.pdn.ac.lk](mailto:e17144@eng.pdn.ac.lk)\]
 - E/17/168 : Mr.Kodagoda K.H.S.P. &nbsp; &nbsp; \[[github](https://github.com/Sandun666) ; [e17168@eng.pdn.ac.lk](mailto:e17168@eng.pdn.ac.lk)\]
 - E/17/405 : Mr.Wijesinghe W.D.L.P. &nbsp; \[[github](https://github.com/Wijesinghe0141) ; [e17405@eng.pdn.ac.lk](mailto:e17405@eng.pdn.ac.lk)\]
