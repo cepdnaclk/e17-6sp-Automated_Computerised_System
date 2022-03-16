@@ -49,11 +49,11 @@ distribution process
 
 ## Solution Architecture 
 
-![Solution Architecture](https://github.com/cepdnaclk/e17-co328-Automated_Computerised_System/blob/main/docs/images/solution_architecture.png)
+![Solution Architecture](/images/solution_architecture.png)
 
 ## User Story
 
-![User Story](https://github.com/cepdnaclk/e17-co328-Automated_Computerised_System/blob/main/docs/images/user_story.png)
+![User Story](/images/user_story.png)
 
 ## Measuring Matrix 
 
