@@ -57,7 +57,7 @@ distribution process
 
 ## Proposed UI
 
-![UI Design](images/UI/web.jpg "UI Design")
+![UI Design](images/UI/web.jpg "Proposed UI Designs")
 
 ## Measuring Matrix 
 
