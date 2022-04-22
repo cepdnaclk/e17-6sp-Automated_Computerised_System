@@ -59,11 +59,11 @@ CREATE TABLE issued_product(
 );
 
 CREATE TABLE distributed_product(
+	BatchNumber VARCHAR(30),
 	ShippingDate DATE,
-    BatchNumber VARCHAR(30),
     AssignedQuantity DECIMAL,
     DistributedProductName VARCHAR(255),
-    PRIMARY KEY(ShippingDate, BatchNumber),
+    PRIMARY KEY(BatchNumber, ShippingDate),
 	FOREIGN KEY (DistributedProductName) REFERENCES product(ProductName)
 	ON DELETE CASCADE
     ON UPDATE CASCADE
@@ -77,8 +77,8 @@ CREATE TABLE shop(
 );
 
 CREATE TABLE distribution_process(
-	BatchNumber VARCHAR(30),
-    ShippingDate DATE,
+	DBatchNumber VARCHAR(30),
+	DShippingDate DATE,
     IssuedDMUserName VARCHAR(255),
     SalesAgentUserName VARCHAR(255),
     DestinationShopID VARCHAR(30),
@@ -86,8 +86,8 @@ CREATE TABLE distribution_process(
     CourieredQuantity DECIMAL,
     DelivaryStatus VARCHAR(255),
     ValidRecord BOOL,
-	PRIMARY KEY(BatchNumber, ShippingDate, IssuedDMUserName, SalesAgentUserName, DestinationShopID),
-    FOREIGN KEY (BatchNumber, ShippingDate) REFERENCES distributed_product(BatchNumber, ShippingDate),
+	PRIMARY KEY(DBatchNumber, DShippingDate, IssuedDMUserName, SalesAgentUserName, DestinationShopID),
+    FOREIGN KEY (DBatchNumber, DShippingDate) REFERENCES distributed_product(BatchNumber, ShippingDate),
     FOREIGN KEY (IssuedDMUserName) REFERENCES distribution_manager(UserName), 
     FOREIGN KEY (SalesAgentUserName) REFERENCES sales_agent(UserName), 
     FOREIGN KEY (DestinationShopID) REFERENCES shop(ShopID)
