@@ -1,8 +1,10 @@
-const express = require('express');
+const express = require("express");
+const login = require('./routes/login');
+
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send("Hello Wolrd");
-});
+app.use(express.json());
+
+app.use('/api/login', login);
 
 app.listen(4000, () => console.log("Listening on port 4000..."));
