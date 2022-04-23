@@ -14,7 +14,7 @@ function FMProductDetailsAddForm() {
       id: 1,
       name: 'productName',
       type: 'text',
-      placeholder: 'Enter for Product name',
+      placeholder: 'Enter Product name',
     },
     {
       id: 2,
