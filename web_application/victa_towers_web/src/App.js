@@ -5,7 +5,10 @@ import UserCreate from './pages/usercreate';
 import Entry from './components/Entry/Entry'
 
 function App() {
-    return <Entry/>
+  //return <Login />;
+  return <Home />;
+  // return <UserCreate /> ;
+
 }
 
 export default App;
