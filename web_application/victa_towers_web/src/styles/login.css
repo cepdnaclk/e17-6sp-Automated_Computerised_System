@@ -1,0 +1,79 @@
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../assets/background.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container-card {
+  padding-top: 4%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
+}
+
+.title {
+  color: rgb(78, 78, 78);
+  font: 1em sans-serif;
+  font-size: 4vw;
+  padding-left: 20%;
+}
+
+/* .button {
+    font-size: 2vw;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} */
+
+.button {
+  font-size: 2vw;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  align-items: center;
+  appearance: button;
+  background-color: #063469;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(45, 45, 45, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: 'RM Neue', sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 10px 21px;
+  text-align: center;
+  text-transform: none;
+  transition: color 0.13s ease-in-out, background 0.13s ease-in-out,
+    opacity 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:active {
+  background-color: #05336b;
+}
+
+.button:hover {
+  background-color: #1757a6;
+}
