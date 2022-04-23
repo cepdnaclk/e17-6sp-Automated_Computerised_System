@@ -1,0 +1,14 @@
+.header-nav-bar {
+  height: 60px;
+  background: #00254d;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.site-logo {
+  width: 60px;
+  min-width: 32px;
+  margin: 0 18px 0 15px;
+}
