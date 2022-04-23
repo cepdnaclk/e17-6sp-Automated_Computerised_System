@@ -24,10 +24,17 @@ router.post("/", auth, async (req, res) => {
     }
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
     
-    const signupFM = `INSERT INTO ${tableName} VALUES ("${body.userName}", "${body.passWord}", "${body.name}", "${body.contact}");`;
+    const createUser = `CREATE USER '${body.userName}'@'localhost' IDENTIFIED BY '${body.passWord}';`; 
+    const privileges = `GRANT '${tableName}' TO '${body.userName}'@'localhost';`;
+    const flushprivilages = "FLUSH PRIVILEGES;";
+    const setRole = `SET DEFAULT ROLE ALL TO '${body.userName}'@'localhost';`;
+    const signup = `INSERT INTO ${tableName} VALUES ("${body.userName}", "${body.passWord}", "${body.name}", "${body.contact}");`;
     try {
-        const [response] = await connection.promise().execute(signupFM);
-        console.log(response);
+        const [res1] = await connection.promise().execute(createUser);
+        const [res2] = await connection.promise().execute(privileges);
+        const [res3] = await connection.promise().execute(flushprivilages);
+        const [res4] = await connection.promise().execute(setRole);
+        const [res5] = await connection.promise().execute(signup);
         const token = jwt.sign(
             {
                 jwtUserName: fromJwt.jwtUserName,

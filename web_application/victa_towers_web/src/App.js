@@ -1,11 +1,10 @@
-import ReactDOM from 'react-dom';
-// import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Home from './pages/home/Home';
+import './styles/login.css';
+import Login from './pages/login';
 
-export default function App() {
+function App()  {
   return (
-    <>
-      <Home />
-    </>
+   <Login/>
   );
 }
+
+export default App;
