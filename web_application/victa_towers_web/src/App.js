@@ -1,6 +1,9 @@
-function App() {
+import './styles/login.css';
+import Login from './pages/login';
+
+function App()  {
   return (
-    <h1>Hello World</h1>
+   <Login/>
   );
 }
 
