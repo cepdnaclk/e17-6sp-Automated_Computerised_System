@@ -12,6 +12,10 @@ DELETE FROM factory_manager
 	WHERE UserName = "user3FM";
 INSERT INTO factory_manager VALUES(
 	'user1FM', 'password1FM', 'Nimal Perera', '056-1342435');
+INSERT INTO product VALUES(
+	'cleaner 200ml', 100.00);
+INSERT INTO factory_product VALUES(
+	'220423cleaner200', '2022-04-23', 500, 500, 'user1FM');
     
 CREATE ROLE 'factory_manager', 'distribution_manager', 'sales_agent';
 -- DROP ROLE 'factory_manager', 'distribution_manager', 'sales_agent';
