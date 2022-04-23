@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import '../../styles/login.css';
 import FormInput from '../../components/FormInput/FormInput';
-import {Dropdown,Option} from "../../components/Dropdown/Dropdown"
+import { Dropdown, Option } from '../../components/Dropdown/Dropdown';
 
 function Login() {
   const [values, setValues] = useState({
@@ -46,9 +47,7 @@ function Login() {
               onChange={onChange}
             />
           ))}
-          <Dropdown
-            buttonText="Send form"
-            onChange={onChange}>
+          <Dropdown buttonText="Send form" onChange={onChange}>
             <Option selected value="Select the role" />
             <Option value="Role 1" />
             <Option value="Role 2" />

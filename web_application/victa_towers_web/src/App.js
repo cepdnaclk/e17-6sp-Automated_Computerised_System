@@ -4,8 +4,9 @@ import Home from './pages/home/Home';
 import UserCreate from './pages/usercreate';
 
 function App() {
-    return <Login />;
-    // return <UserCreate /> ;
+  //return <Login />;
+  return <Home />;
+  // return <UserCreate /> ;
 }
 
 export default App;
