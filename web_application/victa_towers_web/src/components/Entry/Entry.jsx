@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import '../../styles/login.css';
+import '../../styles/entry.css';
 import FormInput from '../../components/FormInput/FormInput';
 import {Dropdown,Option} from "../../components/Dropdown/Dropdown"
 
-function Login() {
+function Entry() {
   const [values, setValues] = useState({
-    username: '',
+    entryid: '',
     password: '',
     role: '',
   });
@@ -33,7 +33,7 @@ function Login() {
   return (
     <div className="app">
       <div className="container-card">
-        <div className="title">Log In </div>
+        <div className="title">Entry</div>
         <br></br>
         <br></br>
         <form onSubmit={onChange}>
@@ -62,4 +62,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Entry;

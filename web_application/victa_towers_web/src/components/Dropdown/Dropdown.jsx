@@ -10,7 +10,7 @@ import {
 export function Dropdown(props) {
   return (
     <DropdownWrapper action={props.action} onChange={props.onChange}>
-      <StyledSelect id="services" name="role" className="dropdown">
+      <StyledSelect id="services" name="role" className="dropdown" >
         {props.children}
       </StyledSelect>
 
