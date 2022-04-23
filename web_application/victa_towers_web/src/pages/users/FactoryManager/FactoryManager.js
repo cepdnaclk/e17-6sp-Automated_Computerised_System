@@ -12,6 +12,7 @@ import FMManufactureProductPage from './ManufactureProducts/FMManufactureProduct
 import FMProductDetailsAddForm from '../../../forms/FMProductDetailsAddForm';
 import FMHomePage from './FMHomePage/FMHomePage';
 import FMIssueProductForm from '../../../forms/FMIssueProductForm';
+import FMManufacturedProductForm from '../../../forms/FMManufacturedProductForm';
 
 function FactoryManager() {
   return (
@@ -38,6 +39,10 @@ function FactoryManager() {
             <Route
               path="/fmmanufactureproducts"
               element={<FMManufactureProductPage />}
+            />
+            <Route
+              path="/fmmanufactureproducts/form"
+              element={<FMManufacturedProductForm />}
             />
           </Routes>
         </div>
