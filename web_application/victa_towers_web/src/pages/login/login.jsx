@@ -1,14 +1,13 @@
 import { useState } from 'react';
 import '../../styles/login.css';
 import FormInput from '../../components/FormInput/FormInput';
+import {Dropdown,Option} from "../../components/Dropdown/Dropdown"
 
 function Login() {
   const [values, setValues] = useState({
     username: '',
-    role: '',
-    number: '',
-    email: '',
     password: '',
+    role: '',
   });
 
   const inputs = [
@@ -20,18 +19,6 @@ function Login() {
     },
     {
       id: 2,
-      name: 'role',
-      type: 'text',
-      placeholder: 'Enter Your Role',
-    },
-    {
-      id: 3,
-      name: 'email',
-      type: 'text',
-      placeholder: 'Enter Your Email',
-    },
-    {
-      id: 4,
       name: 'password',
       type: 'text',
       placeholder: 'Enter Your Password',
@@ -59,6 +46,14 @@ function Login() {
               onChange={onChange}
             />
           ))}
+          <Dropdown
+            buttonText="Send form"
+            onChange={onChange}>
+            <Option selected value="Select the role" />
+            <Option value="Role 1" />
+            <Option value="Role 2" />
+            <Option value="Role 3" />
+          </Dropdown>
           <br></br>
           <br></br>
           <button className="button"> Submit </button>
