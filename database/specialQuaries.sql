@@ -33,8 +33,8 @@ GRANT RELOAD ON *.* TO 'factory_manager';
 FLUSH PRIVILEGES;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON victa.sales_agent TO 'distribution_manager';
-GRANT INSERT (ReceivedQuantity, ValidRecord, CheckedDMUserName) ON victa.issued_product TO 'distribution_manager';
-GRANT UPDATE (ReceivedQuantity, ValidRecord) ON victa.issued_product TO 'distribution_manager';
+GRANT INSERT (ReceivedQuantity, receivingstatus, CheckedDMUserName) ON victa.issued_product TO 'distribution_manager';
+GRANT UPDATE (ReceivedQuantity, receivingstatus) ON victa.issued_product TO 'distribution_manager';
 GRANT SELECT, DELETE ON victa.issued_product TO 'distribution_manager';
 GRANT SELECT, INSERT, UPDATE, DELETE ON victa.shop TO 'distribution_manager';
 GRANT SELECT, INSERT, UPDATE, DELETE ON victa.distributed_product TO 'distribution_manager';
@@ -52,6 +52,6 @@ GRANT SELECT, DELETE ON victa.distribution_process TO 'sales_agent';
 FLUSH PRIVILEGES;
 
 SELECT User, Host FROM mysql.user;
-DROP USER 'user2FM'@'localhost';
+DROP USER 'user1FM'@'localhost';
 SHOW GRANTS FOR 'user1FM'@'localhost';
 SHOW GRANTS FOR 'user1FM'@'localhost' USING 'factory_manager';

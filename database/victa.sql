@@ -50,7 +50,7 @@ CREATE TABLE issued_product(
     IssuedFMUserName VARCHAR(255),
     ReceivedQuantity DECIMAL,
     CheckedDMUserName VARCHAR(255),
-    ValidRecord BOOL,
+    receivingstatus VARCHAR(50),
     FOREIGN KEY (IssuedProductName) REFERENCES product(ProductName),
     FOREIGN KEY (IssuedFMUserName) REFERENCES factory_manager(UserName),
     FOREIGN KEY (CheckedDMUserName) REFERENCES distribution_manager(UserName)
