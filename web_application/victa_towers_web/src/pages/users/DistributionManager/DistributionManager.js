@@ -8,7 +8,7 @@ import DMShops from './DMShops/DMShops';
 import DMReceiveProduct from './DMReceiveProducts/DMReceiveProducts';
 import DMIssueProduct from './DMIssueProduct/DMIssueProduct';
 import DMSalesAgentForm from '../../../forms/DMSalesAgentForm';
-import DMShopsForm from '../../../tables/DMShopsForm';
+import DMShopsForm from '../../../forms/DMShopsForm';
 
 export default function DistributionManager() {
   return (
