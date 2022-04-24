@@ -24,9 +24,9 @@ router.post("/", async (req, res) => {
           tableName = "sales_agent";
            break;
         default:
-          tableName = "rootaccess"
+          tableName = "rootAccess"
     }
-    if(tableName == "rootaccess"){
+    if(tableName == "rootAccess"){
       const token = jwt.sign(
         {
           jwtUserName: body.userName,
@@ -35,11 +35,11 @@ router.post("/", async (req, res) => {
         },
         "victa_jwtPrivateKey"
       );
-      return res.header("x-auth-token", token).status(200).send("Authentication successfull");
+      return res.header("x-auth-token", token).status(200).send("Authentication successful");
     }
-    const getUserdetails = `SELECT * FROM ${tableName} WHERE username='${body.userName}';`;
+    const getUserDetails = `SELECT * FROM ${tableName} WHERE username='${body.userName}';`;
     try {
-      const [response] = await connection.promise().execute(getUserdetails);
+      const [response] = await connection.promise().execute(getUserDetails);
       const token = jwt.sign(
         {
           jwtUserName: body.userName,

@@ -26,13 +26,13 @@ router.post("/", auth, async (req, res) => {
     
     const createUser = `CREATE USER '${body.userName}'@'localhost' IDENTIFIED BY '${body.passWord}';`; 
     const privileges = `GRANT '${tableName}' TO '${body.userName}'@'localhost';`;
-    const flushprivilages = "FLUSH PRIVILEGES;";
+    const flushPrivileges = "FLUSH PRIVILEGES;";
     const setRole = `SET DEFAULT ROLE ALL TO '${body.userName}'@'localhost';`;
     const signup = `INSERT INTO ${tableName} VALUES ("${body.userName}", "${body.passWord}", "${body.name}", "${body.contact}");`;
     try {
         const [res1] = await connection.promise().execute(createUser);
         const [res2] = await connection.promise().execute(privileges);
-        const [res3] = await connection.promise().execute(flushprivilages);
+        const [res3] = await connection.promise().execute(flushPrivileges);
         const [res4] = await connection.promise().execute(setRole);
         const [res5] = await connection.promise().execute(signup);
         const token = jwt.sign(
