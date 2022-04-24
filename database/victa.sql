@@ -50,7 +50,7 @@ CREATE TABLE issued_product(
     IssuedFMUserName VARCHAR(255),
     ReceivedQuantity DECIMAL,
     CheckedDMUserName VARCHAR(255),
-    receivingstatus VARCHAR(50),
+    ReceivingStatus VARCHAR(50),
     FOREIGN KEY (IssuedProductName) REFERENCES product(ProductName),
     FOREIGN KEY (IssuedFMUserName) REFERENCES factory_manager(UserName),
     FOREIGN KEY (CheckedDMUserName) REFERENCES distribution_manager(UserName)
@@ -84,8 +84,7 @@ CREATE TABLE distribution_process(
     DestinationShopID VARCHAR(30),
     CourieredDate DATE,
     CourieredQuantity DECIMAL,
-    DelivaryStatus VARCHAR(255),
-    ValidRecord BOOL,
+    DeliveryStatus VARCHAR(255),
 	PRIMARY KEY(DBatchNumber, DShippingDate, IssuedDMUserName, SalesAgentUserName, DestinationShopID),
     FOREIGN KEY (DBatchNumber, DShippingDate) REFERENCES distributed_product(BatchNumber, ShippingDate),
     FOREIGN KEY (IssuedDMUserName) REFERENCES distribution_manager(UserName), 
