@@ -15,7 +15,7 @@ variables:
   webAppName: ''
 
   # Environment name
-  environmentName: ''
+  environmentName: 'victa-en'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
