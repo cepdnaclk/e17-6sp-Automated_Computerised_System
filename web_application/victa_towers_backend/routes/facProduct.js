@@ -61,8 +61,8 @@ router.post("/issue", auth, async (req, res) => {
     const issuedDate = body.issuedDate;
     const issuedQuantity = body.issuedQuantity;
     const issuedProductName = body.productName;
-    const getOccurance = `SELECT * FROM issued_product WHERE batchNumber='${batchNumber}'`;
-    const insertIssuedProduct = `INSERT INTO issued_product(BatchNumber, IssuedDate, IssuedQuantity, CurrentQuantity, IssuedProductName) VALUES('${batchNumber}', '${issuedDate}', ${issuedQuantity}, ${issuedQuantity}, '${issuedProductName}');`;
+    const getOccurrence = `SELECT * FROM issued_product WHERE batchNumber='${batchNumber}'`;
+    const insertIssuedProduct = `INSERT INTO issued_product(BatchNumber, IssuedDate, IssuedQuantity, CurrentQuantity, IssuedProductName, IssuedFMUSerName, receivingstatus) VALUES('${batchNumber}', '${issuedDate}', ${issuedQuantity}, 0, '${issuedProductName}', "${fromJwt.jwtUserName}", "pending");`;
     const updateFactoryProduct = `UPDATE factory_product SET currentQuantity = currentQuantity-${issuedQuantity} WHERE batchNumber='${batchNumber}';`;
     const token = jwt.sign(
         {
@@ -73,7 +73,7 @@ router.post("/issue", auth, async (req, res) => {
         "victa_jwtPrivateKey"
     );
     try {
-        const [res1] = await connection.promise().execute(getOccurance);
+        const [res1] = await connection.promise().execute(getOccurrence);
         console.log(res1);
         if(!res1.length){
             const [res2] = await connection.promise().execute(insertIssuedProduct); 
@@ -83,13 +83,16 @@ router.post("/issue", auth, async (req, res) => {
         else{
             console.log(res1[0]);
             console.log(res1[0].BatchNumber);
-            const updateIssuedProduct = `UPDATE issued_product SET issuedQuantity=${issuedQuantity}, receivingstatus=null WHERE BatchNumber='${batchNumber}';`;
-            /*
+            const updateIssuedProduct = `UPDATE issued_product SET IssuedQuantity=${issuedQuantity}, IssuedFMUSerName="${fromJwt.jwtUserName}", receivingstatus="pending" WHERE BatchNumber='${batchNumber}';`;
             if(res1[0].receivingstatus == 'success'){
-
+                const [res4] = await connection.promise().execute(updateIssuedProduct); 
+                const [res5] = await connection.promise().execute(updateFactoryProduct);
+                res.header("x-auth-token", token).status(200).send('Successfully issued');
             }
-            */
-            res.header("x-auth-token", token).status(400).send(res1);
+
+            else{
+                res.header("x-auth-token", token).status(400).send("Issuing process failed");
+            }
         }
     } catch (error) {
         console.log(error);
