@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'vicata-backend'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1008DB0C536642D3A0E707C068547332 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_573CC6FB13514A02B543C3F224E305A2 }}
           package: .
