@@ -6,12 +6,15 @@ const createConnection = async (userName, passWord) => {
     user: userName,
     password: passWord,
     database: 'victa', // databasename
+    port: 3306
   };
+  
   var connection = mysql.createConnection(config);
   try {
     await connection.promise().connect();
     return connection;
   } catch (e) {
+    console.log(e.message);
     return null;
   }
 };
