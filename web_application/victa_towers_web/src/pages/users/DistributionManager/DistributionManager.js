@@ -9,6 +9,8 @@ import DMReceiveProduct from './DMReceiveProducts/DMReceiveProducts';
 import DMIssueProduct from './DMIssueProduct/DMIssueProduct';
 import DMSalesAgentForm from '../../../forms/DMSalesAgentForm';
 import DMShopsForm from '../../../forms/DMShopsForm';
+import DMReceiveProductForm from '../../../forms/DMReceiveProductForm';
+import DMIssueProductForm from '../../../forms/DMIssueProductForm';
 
 export default function DistributionManager() {
   return (
@@ -25,7 +27,15 @@ export default function DistributionManager() {
             <Route path="/dmshops" element={<DMShops />} />
             <Route path="/dmshops/form" element={<DMShopsForm />} />
             <Route path="/dmreceiveproducts" element={<DMReceiveProduct />} />
+            <Route
+              path="/dmreceiveproducts/form"
+              element={<DMReceiveProductForm />}
+            />
             <Route path="/dmissueproducts" element={<DMIssueProduct />} />
+            <Route
+              path="/dmissueproducts/form"
+              element={<DMIssueProductForm />}
+            />
           </Routes>
         </div>
       </div>
