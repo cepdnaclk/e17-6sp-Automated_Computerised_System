@@ -2,7 +2,7 @@ const mysql = require('mysql2');
 
 const createConnection = async (userName, passWord) => {
   config = {
-    host: 'localhost',
+    host: 'victa-mysql.mysql.database.azure.com',
     user: userName,
     password: passWord,
     database: 'victa', // databasename

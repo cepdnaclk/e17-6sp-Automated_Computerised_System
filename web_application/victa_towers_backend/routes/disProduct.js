@@ -10,9 +10,13 @@ const router = express.Router();
 router.get("/", auth, async(req, res) => {
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
-    const getDistributedProduct = `SELECT * FROM distributed_product;`; 
+    const getDistributionProcess = `SELECT * FROM distribution_process WHERE IssuedDMUserName="${fromJwt.jwtUserName}";`;
+    let shippingDate;
+    let batchNumber;
+    const getDistributedProduct = `SELECT * FROM distributed_product WHERE ShippingDate="${shippingDate}" AND BatchNumber="${batchNumber}";`; 
     try {
-        const [response] = await connection.promise().execute(getDistributedProduct);
+        const [res1] = await connection.promise().execute(getDistributionProcess);
+        const [res2] = await connection.promise().execute(getDistributedProduct);
         const token = jwt.sign(
             {
                 jwtUserName: fromJwt.jwtUserName,
@@ -21,7 +25,7 @@ router.get("/", auth, async(req, res) => {
             },
             "victa_jwtPrivateKey"
         );
-        res.header("x-auth-token", token).status(200).send(response);
+        res.header("x-auth-token", token).status(200).send(res1);
     } catch (error) {
         console.log(error);
         res.status(400).send("Database failure");
