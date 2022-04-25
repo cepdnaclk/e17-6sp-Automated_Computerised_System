@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function DMReceiveProductPendingTable() {
+export default function DMIssueProductTable() {
   return (
     <div className="col">
       <div className="row">
@@ -11,7 +11,10 @@ export default function DMReceiveProductPendingTable() {
                 <th scope="col">#</th>
                 <th scope="col">Product Name</th>
                 <th scope="col">Batch Number</th>
+                <th scope="col">Shipping Date</th>
                 <th scope="col">Issued Quantity</th>
+                <th scope="col">Sales Agent</th>
+                <th scope="col">Shop</th>
               </tr>
             </thead>
             <tbody>
