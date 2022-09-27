@@ -9,7 +9,7 @@ function Home() {
   return (
     <>
       <TopBar />
-      <SalesAgent />
+      { <SalesAgent /> }
       {/* <DistributionManager /> */}
       {/* <FactoryManager /> */}
     </>
