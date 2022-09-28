@@ -1,7 +1,7 @@
 import { useState } from "react";
-import '../styles/login.css';
-import FormInput from '../components/FormInput/FormInput';
-import {Dropdown,Option} from "../components/Dropdown/Dropdown"
+import '../../styles/login.css';
+import FormInput from '../../components/FormInput/FormInput';
+import {Dropdown,Option} from "../../components/Dropdown/Dropdown"
 
 function UserCreate() {
     const [values, setValues] = useState({
