@@ -9,11 +9,10 @@ function Home() {
   return (
     <>
       <TopBar />
-      <SalesAgent />
-      {/* <DistributionManager /> */}
+      {/* <SalesAgent /> */}
+      <DistributionManager />
       {/* <FactoryManager /> */}
     </>
   );
 }
-
 export default Home;
