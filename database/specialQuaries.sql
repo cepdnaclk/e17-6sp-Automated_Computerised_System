@@ -1,12 +1,12 @@
 USE victa;
 
-CREATE USER 'user1FM'@'localhost' IDENTIFIED BY 'password1FM';
-GRANT 'factory_manager' TO 'user1FM'@'localhost';
+CREATE USER 'user1FM' IDENTIFIED BY 'password1FM';
+GRANT 'factory_manager' TO 'user1FM';
 -- GRANT USAGE ON victa.* TO 'user1FM'@'localhost';
 FLUSH PRIVILEGES;
-SET DEFAULT ROLE ALL TO 'user1FM'@'localhost';
+SET DEFAULT ROLE ALL TO 'user1FM';
 
-GRANT ALL PRIVILEGES ON victa.* TO 'user1FM'@'localhost';
+GRANT ALL PRIVILEGES ON victa.* TO 'user1FM';
 
 DELETE FROM factory_manager
 	WHERE UserName = "user3FM";
