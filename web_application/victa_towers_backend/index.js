@@ -20,4 +20,4 @@ app.use('/api/dis-product', distributedProduct);
 app.use('/api/issue-product', issuedProduct);
 
 process.env.NODE_ENV = 'production';
-app.listen(8080, () => console.log("Listening on port 4000..."));
+app.listen(8080, () => console.log("Listening on port 8080..."));
