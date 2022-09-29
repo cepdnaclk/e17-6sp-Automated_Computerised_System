@@ -46,26 +46,26 @@ CREATE TABLE IF NOT EXISTS `victa`.`factory_product` (
   `Quantity` INT NULL,
   `EnteredFMUserName` VARCHAR(20) NOT NULL,
   `IsIssued` TINYINT NULL,
-  `IssuedFMUserName` VARCHAR(20) NOT NULL,
+  `IssuedFMUserName` VARCHAR(20) NULL,
   PRIMARY KEY (`BatchNumber`),
   INDEX `fk_factory_product_product_idx` (`FactoryProductName` ASC) VISIBLE,
-  INDEX `fk_factory_product_factory_manager1_idx` (`EnteredFMUserName` ASC) INVISIBLE,
+  INDEX `fk_factory_product_factory_manager1_idx` (`EnteredFMUserName` ASC) VISIBLE,
   INDEX `fk_factory_product_factory_manager2_idx` (`IssuedFMUserName` ASC) VISIBLE,
   CONSTRAINT `fk_factory_product_product`
     FOREIGN KEY (`FactoryProductName`)
     REFERENCES `victa`.`product` (`ProductName`)
     ON DELETE NO ACTION
-    ON UPDATE CASCADE,
+    ON UPDATE NO ACTION,
   CONSTRAINT `fk_factory_product_factory_manager1`
     FOREIGN KEY (`EnteredFMUserName`)
     REFERENCES `victa`.`factory_manager` (`UserName`)
     ON DELETE NO ACTION
-    ON UPDATE CASCADE,
+    ON UPDATE NO ACTION,
   CONSTRAINT `fk_factory_product_factory_manager2`
     FOREIGN KEY (`IssuedFMUserName`)
     REFERENCES `victa`.`factory_manager` (`UserName`)
     ON DELETE NO ACTION
-    ON UPDATE CASCADE)
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `victa`.`issued_product` (
     FOREIGN KEY (`CheckedDMUserName`)
     REFERENCES `victa`.`distribution_manager` (`UserName`)
     ON DELETE NO ACTION
-    ON UPDATE CASCADE)
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
@@ -149,17 +149,17 @@ CREATE TABLE IF NOT EXISTS `victa`.`distributed_product` (
     FOREIGN KEY (`IssuedDMUserName`)
     REFERENCES `victa`.`distribution_manager` (`UserName`)
     ON DELETE NO ACTION
-    ON UPDATE CASCADE,
+    ON UPDATE NO ACTION,
   CONSTRAINT `fk_distributed_product_sales_agent1`
     FOREIGN KEY (`SalesAgentUserName`)
     REFERENCES `victa`.`sales_agent` (`UserName`)
     ON DELETE NO ACTION
-    ON UPDATE CASCADE,
+    ON UPDATE NO ACTION,
   CONSTRAINT `fk_distributed_product_shop1`
     FOREIGN KEY (`DestinedShopId`)
     REFERENCES `victa`.`shop` (`ShopId`)
     ON DELETE NO ACTION
-    ON UPDATE CASCADE)
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 

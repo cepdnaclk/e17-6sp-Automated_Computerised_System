@@ -12,21 +12,21 @@ router.post("/", async (req, res) => {
     if(!connection){
         return res.status(400).send("Authentication failed");
     }
-    let tableName;
+    let role;
     switch (body.role) {
         case "fm":
-          tableName = "factory_manager";
+          role = "factory_manager";
           break;
         case "dm":
-          tableName = "distribution_manager";
+          role = "distribution_manager";
           break;
         case "sa":
-          tableName = "sales_agent";
+          role = "sales_agent";
            break;
         default:
-          tableName = "rootAccess"
+          role = "rootAccess"
     }
-    if(tableName == "rootAccess"){
+    if(role == "rootAccess"){
       const token = jwt.sign(
         {
           jwtUserName: body.userName,
@@ -37,7 +37,9 @@ router.post("/", async (req, res) => {
       );
       return res.header("x-auth-token", token).status(200).send("Authentication successful");
     }
-    const getUserDetails = `SELECT * FROM ${tableName} WHERE username='${body.userName}';`;
+
+    let table_name = role;
+    const getUserDetails = `SELECT * FROM ${table_name} WHERE username='${body.userName}';`;
     try {
       const [response] = await connection.promise().execute(getUserDetails);
       const token = jwt.sign(
