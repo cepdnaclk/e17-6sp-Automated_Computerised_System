@@ -9,9 +9,9 @@ function Home() {
   return (
     <>
       <TopBar />
-      { <SalesAgent /> }
-      {/* <DistributionManager /> */}
-      {/* <FactoryManager /> */}
+      { /*<SalesAgent />*/ }
+      { /*<DistributionManager />*/ }
+      { <FactoryManager /> }
     </>
   );
 }
