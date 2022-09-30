@@ -18,7 +18,7 @@ SELECT User, Host FROM mysql.user;
 
 /*
 DROP USER 'victa_admin_1';
-
+DROP USER 'fm2';
 DROP ROLE 'sales_agent';
 DROP ROLE 'distribution_manager';
 DROP ROLE 'factory_manager';

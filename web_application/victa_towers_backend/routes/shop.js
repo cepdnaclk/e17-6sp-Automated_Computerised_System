@@ -6,6 +6,9 @@ const databaseConnection = require("../modules/databaseConnection");
 
 const router = express.Router();
 
+/*
+A route to get all the shops details by the company owner and the Distribution manager
+*/
 router.get("/", auth, async(req, res) => {
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
@@ -27,15 +30,17 @@ router.get("/", auth, async(req, res) => {
     }
 });
 
+/*
+A route to create a new shop by the company owner
+*/
 router.post("/", auth, async(req, res) => {
     const body = req.body;
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
-    const shopID = body.shopId;
     const shopName = body.shopName;
-    const location = body.location;
+    const address = body.address;
     const contact = body.contact;
-    const enterShop = `INSERT INTO shop VALUES ('${shopID}', '${shopName}', '${location}', '${contact}');`; 
+    const enterShop = `INSERT INTO shop VALUES ('${shopName}', '${address}', '${contact}');`; 
     try {
         const [response] = await connection.promise().execute(enterShop);
         const token = jwt.sign(
@@ -46,7 +51,7 @@ router.post("/", auth, async(req, res) => {
             },
             "victa_jwtPrivateKey"
         );
-        res.header("x-auth-token", token).status(200).send(response);
+        res.header("x-auth-token", token).status(200).send("Inserted new shop successfully");
     } catch (error) {
         console.log(error);
         res.status(400).send("Database failure");
