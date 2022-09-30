@@ -30,6 +30,30 @@ router.get("/", auth, async (req, res) => {
     }
 });
 
+/*
+A route to retrieve not issued products by the factory manager
+*/
+router.get("/not-issued", auth, async (req, res) => {
+    const fromJwt = req.fromUser;
+    const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
+    const getNotIssuedProducts = `SELECT * FROM factory_product WHERE IsIssued = 0;`; 
+    try {
+        const [response] = await connection.promise().execute(getNotIssuedProducts);
+        const token = jwt.sign(
+            {
+                jwtUserName: fromJwt.jwtUserName,
+                jwtPassWord: fromJwt.jwtPassWord,
+                jwtRole: fromJwt.jwtRole
+            },
+            "victa_jwtPrivateKey"
+        );
+        res.header("x-auth-token", token).status(200).send(response);
+    } catch (error) {
+        console.log(error);
+        res.status(400).send("Database failure");
+    }
+});
+
 
 /*
 A route to enter factory product details by the factory manager

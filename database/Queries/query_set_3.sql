@@ -18,7 +18,7 @@ GRANT SELECT ON victa.shop to 'distribution_manager';
 GRANT SELECT ON victa.factory_product TO 'distribution_manager';
 FLUSH PRIVILEGES;
 
-GRANT INSERT, UPDATE (DeliveredQuantity, DelivaryStatus) ON victa.distributed_product TO 'sales_agent';
+GRANT INSERT, UPDATE (DeliveredQuantity, DeliveryStatus) ON victa.distributed_product TO 'sales_agent';
 GRANT SELECT ON victa.sales_agent TO 'sales_agent';
 GRANT SELECT ON victa.distributed_product TO 'sales_agent';
 GRANT SELECT ON victa.shop to 'sales_agent';

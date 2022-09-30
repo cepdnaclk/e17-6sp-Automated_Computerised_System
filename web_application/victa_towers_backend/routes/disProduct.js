@@ -6,17 +6,15 @@ const databaseConnection = require("../modules/databaseConnection");
 
 const router = express.Router();
 
-// To get distributed product details for a particular distribution manager which are not checked
-router.get("/", auth, async(req, res) => {
+/*
+A route to get errored distributions by distribution manager and company owner
+*/
+router.get("/errored", auth, async(req, res) => {
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
-    const getDistributionProcess = `SELECT * FROM distribution_process WHERE IssuedDMUserName="${fromJwt.jwtUserName}";`;
-    let shippingDate;
-    let batchNumber;
-    const getDistributedProduct = `SELECT * FROM distributed_product WHERE ShippingDate="${shippingDate}" AND BatchNumber="${batchNumber}";`; 
+    const getErroredDistributions = `SELECT * FROM distributed_product WHERE DeliveryStatus=0;`;
     try {
-        const [res1] = await connection.promise().execute(getDistributionProcess);
-        const [res2] = await connection.promise().execute(getDistributedProduct);
+        const [response] = await connection.promise().execute(getErroredDistributions);
         const token = jwt.sign(
             {
                 jwtUserName: fromJwt.jwtUserName,
@@ -25,63 +23,50 @@ router.get("/", auth, async(req, res) => {
             },
             "victa_jwtPrivateKey"
         );
-        res.header("x-auth-token", token).status(200).send(res1);
+        res.header("x-auth-token", token).status(200).send(response);
     } catch (error) {
         console.log(error);
         res.status(400).send("Database failure");
     }
 });
 
-// To get pending delivery details for a particular distribution manager
-router.get("/deliveries", auth, async(req, res) => {
-
+/*
+A route to remove errored delivery products by the company owner or distribution manager 
+*/
+router.put("/errored", auth, async(req, res) => {
+    const fromJwt = req.fromUser;
+    const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
+    const orderId = body.distributionOrderId;
+    const setErroredDistributions = `UPDATE distributed_product SET DeliveryStatus = 1 WHERE DistributionOrderId = '${orderId}';`;
+    try {
+        const [response] = await connection.promise().execute(setErroredDistributions);
+        const token = jwt.sign(
+            {
+                jwtUserName: fromJwt.jwtUserName,
+                jwtPassWord: fromJwt.jwtPassWord,
+                jwtRole: fromJwt.jwtRole
+            },
+            "victa_jwtPrivateKey"
+        );
+        res.header("x-auth-token", token).status(200).send("Errored distribution is checked");
+    } catch (error) {
+        console.log(error);
+        res.status(400).send("Database failure");
+    }
 });
 
+/*
+A route to insert distributed products to database by the distribution manager
+*/
 router.post("/", auth, async(req, res) => {
     const body = req.body;
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
     const batchNumber = body.batchNumber;
-    const shippingDate = body.shippingDate;
     const assignedQuantity = parseInt(body.quantity);
-    const productName = body.productName;
     const salesAgent = body.salesAgentUserName;
-    const shopID = body.shopId;
-    const enterDistributedProducts = `INSERT INTO distributed_product VALUES ('${batchNumber}', '${shippingDate}', ${assignedQuantity}, '${productName}');`;
-    const enterDistributionProcess = `INSERT INTO distribution_process(DBatchNumber, DShippingDate, IssuedDMUserName, SalesAgentUserName, DestinationShopID, DeliveryStatus) VALUES("${batchNumber}", "${shippingDate}", "${fromJwt.jwtUserName}", "${salesAgent}", "${shopID}", "pending");`; 
-    const updateIssuedProduct = `UPDATE issued_product SET CurrentQuantity=CurrentQuantity-${assignedQuantity} WHERE BatchNumber="${batchNumber}"`;
-    try {
-        const [res1] = await connection.promise().execute(enterDistributedProducts);
-        const [res2] = await connection.promise().execute(enterDistributionProcess);
-        const [res3] = await connection.promise().execute(updateIssuedProduct);
-        const token = jwt.sign(
-            {
-                jwtUserName: fromJwt.jwtUserName,
-                jwtPassWord: fromJwt.jwtPassWord,
-                jwtRole: fromJwt.jwtRole
-            },
-            "victa_jwtPrivateKey"
-        );
-        res.header("x-auth-token", token).status(200).send("Successfully shipped from the store");
-    } catch (error) {
-        console.log(error);
-        res.status(400).send("Database failure");
-    }
-});
-
-router.put("/receive", auth, async(req, res) => {
-    const body = req.body;
-    const fromJwt = req.fromUser;
-    const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
-    const batchNumber = body.batchNumber;
-    const shippingDate = body.shippingDate;
-    const courieredDate = body.courieredDate;
-    const courieredQuantity = parseInt(body.quantity);
-    const issuedDMuserName = body.issuedDMUserName;
-    const destinationShopID = body.destinationShopId;
-    let deliveryStatus;
-    const getDistributedProductsQuantity = `SELECT * FROM distributed_product WHERE BatchNumber=${batchNumber} AND ShippingDate="${shippingDate}";`;
-    const updateDistributionProcess = `UPDATE distribution_process SET CourieredQuantity=${courieredQuantity}, CourieredDate="${courieredDate}", DeliveryStatus=${deliveryStatus} WHERE BatchNumber="${batchNumber}" AND ShippingDate="${shippingDate}" AND IssuedDMUserName="${issuedDMuserName}" AND SalesAgentUserName="${fromJwt.jwtUserName}" AND DestinationShopID="${destinationShopID}";`; 
+    const shopName = body.destinedShopName;
+    const getCurrentQuantity = `SELECT CurrentQuantity FROM issued_product WHERE BatchNumber = '${batchNumber}';`;
     const token = jwt.sign(
         {
             jwtUserName: fromJwt.jwtUserName,
@@ -91,42 +76,57 @@ router.put("/receive", auth, async(req, res) => {
         "victa_jwtPrivateKey"
     );
     try {
-        const [res1] = await connection.promise().execute(getDistributedProductsQuantity);
-        const distributedProductsQuantity = res1[0].AssignedQuantity;
-        if(distributedProductsQuantity != courieredQuantity){
-            deliveryStatus = "in-progress";
-            const [res2] = await connection.promise().execute(updateDistributionProcess);
-            return res.header("x-auth-token", token).status(200).send("Missing happen In delivery process");
+        const [res1] = await connection.promise().execute(getCurrentQuantity);
+        let currentQuantity = res1[0].CurrentQuantity;
+        console.log(currentQuantity);
+        if(currentQuantity >= assignedQuantity){
+            let updateCurrentQuantity = `UPDATE issued_product SET CurrentQuantity = ${currentQuantity-assignedQuantity} WHERE BatchNumber = '${batchNumber}';`;
+            let assignProducts = `INSERT INTO distributed_product
+             (BatchNumber, Quantity, IssuedDMUserName, SalesAgentUserName, DestinedShopName)
+              VALUES ('${batchNumber}', ${assignedQuantity}, '${fromJwt.jwtUserName}', '${salesAgent}', '${shopName}');`;
+            const [res2] = await connection.promise().execute(updateCurrentQuantity);
+            const [res3] = await connection.promise().execute(assignProducts);
+            res.header("x-auth-token", token).status(200).send("Successfully assigned to sales agent");
         }
-        deliveryStatus = "success";
-        const [res3] = await connection.promise().execute(updateDistributionProcess);
-        res.header("x-auth-token", token).status(200).send("Successfully delivered");
+        else{
+            res.header("x-auth-token", token).status(400).send("Assigned quantity not exist");
+        }
     } catch (error) {
         console.log(error);
         res.status(400).send("Database failure");
     }
 });
 
-router.put("/receive/check", auth, async(req, res) => {
+/*
+A route to insert the information by the sales agent
+*/
+router.put("/receive", auth, async(req, res) => {
     const body = req.body;
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
-    const batchNumber = body.batchNumber;
-    const shippingDate = body.shippingDate;
-    const salesAgentUserName = body.salesAGentUserName;
-    const destinationShopID = body.destinationShopId;
-    const updateDistributionProcess = `UPDATE distribution_process SET DeliveryStatus="checked" WHERE BatchNumber="${batchNumber}" AND ShippingDate="${shippingDate}" AND IssuedDMUserName="${fromJwt.jwtUserName}" AND SalesAgentUserName="${salesAgentUserName}" AND DestinationShopID="${destinationShopID}";`; 
+    const orderId = body.distributionOrderId;
+    const deliveredQuantity = parseInt(body.deliveredQuantity);
+    const getIssuedQuantity = `SELECT Quantity FROM distributed_product WHERE DistributionOrderId=${orderId};`;
+    const token = jwt.sign(
+        {
+            jwtUserName: fromJwt.jwtUserName,
+            jwtPassWord: fromJwt.jwtPassWord,
+            jwtRole: fromJwt.jwtRole
+        },
+        "victa_jwtPrivateKey"
+    );
     try {
-        const [response] = await connection.promise().execute(updateDistributionProcess);
-        const token = jwt.sign(
-            {
-                jwtUserName: fromJwt.jwtUserName,
-                jwtPassWord: fromJwt.jwtPassWord,
-                jwtRole: fromJwt.jwtRole
-            },
-            "victa_jwtPrivateKey"
-        );
-        return res.header("x-auth-token", token).status(200).send("Checked shipping process Successfully");
+        const [res1] = await connection.promise().execute(getIssuedQuantity);
+        const assignedQuantity = res1[0].Quantity;
+        if(assignedQuantity == deliveredQuantity){
+            const updateDistributionProduct = `UPDATE distributed_product SET DeliveryStatus = 1, DeliveredQuantity = ${deliveredQuantity}
+             WHERE OrderId = ${orderId} ; `; 
+            const [res2] = await connection.promise().execute(updateDistributionProduct);
+            return res.header("x-auth-token", token).status(200).send("Successfully update the delivery status");
+        }
+        const updateDistributionProduct = `UPDATE distributed_product SET DeliveredQuantity = ${deliveredQuantity} WHERE OrderId = ${orderId} ; `; 
+        const [res2] = await connection.promise().execute(updateDistributionProduct);
+        res.header("x-auth-token", token).status(200).send("Delivery is not successful");
     } catch (error) {
         console.log(error);
         res.status(400).send("Database failure");

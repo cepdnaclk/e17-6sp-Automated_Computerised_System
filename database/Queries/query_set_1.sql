@@ -136,7 +136,7 @@ CREATE TABLE IF NOT EXISTS `victa`.`distributed_product` (
   `SalesAgentUserName` VARCHAR(20) NOT NULL,
   `DestinedShopName` VARCHAR(50) NOT NULL,
   `DeliveredQuantity` INT NULL,
-  `DelivaryStatus` TINYINT NULL DEFAULT 0,
+  `DeliveryStatus` TINYINT NULL DEFAULT 0,
   PRIMARY KEY (`DistributionOrderId`),
   INDEX `fk_distributed_product_distribution_manager1_idx` (`IssuedDMUserName` ASC) VISIBLE,
   INDEX `fk_distributed_product_sales_agent1_idx` (`SalesAgentUserName` ASC) VISIBLE,
@@ -158,6 +158,8 @@ CREATE TABLE IF NOT EXISTS `victa`.`distributed_product` (
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
+ALTER TABLE `victa`.`distributed_product` 
+CHANGE COLUMN `DistributionOrderId` `DistributionOrderId` INT NOT NULL AUTO_INCREMENT ;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
