@@ -1,13 +1,12 @@
-import './styles/login.css';
-import Login from './pages/login/login';
-import Home from './pages/home/Home';
-import UserCreate from './pages/usercreate';
+import Login from './pages/login/login'; // login
+import Home from './pages/home/Home'; // home page
+import UserCreate from './pages/signup/usercreate'; // signup page
 import Entry from './components/Entry/Entry';
 
 function App() {
-  //return <Login />;
+  // return <Login />;
   return <Home />;
-  // return <UserCreate /> ;
+  //return <UserCreate /> ;
 }
 
 export default App;
