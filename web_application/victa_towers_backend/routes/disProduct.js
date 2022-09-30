@@ -34,6 +34,7 @@ router.get("/errored", auth, async(req, res) => {
 A route to remove errored delivery products by the company owner or distribution manager 
 */
 router.put("/errored", auth, async(req, res) => {
+    const body = req.body;
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
     const orderId = body.distributionOrderId;
@@ -120,11 +121,11 @@ router.put("/receive", auth, async(req, res) => {
         const assignedQuantity = res1[0].Quantity;
         if(assignedQuantity == deliveredQuantity){
             const updateDistributionProduct = `UPDATE distributed_product SET DeliveryStatus = 1, DeliveredQuantity = ${deliveredQuantity}
-             WHERE OrderId = ${orderId} ; `; 
+             WHERE DistributionOrderId = ${orderId} ; `; 
             const [res2] = await connection.promise().execute(updateDistributionProduct);
             return res.header("x-auth-token", token).status(200).send("Successfully update the delivery status");
         }
-        const updateDistributionProduct = `UPDATE distributed_product SET DeliveredQuantity = ${deliveredQuantity} WHERE OrderId = ${orderId} ; `; 
+        const updateDistributionProduct = `UPDATE distributed_product SET DeliveredQuantity = ${deliveredQuantity} WHERE DistributionOrderId = ${orderId} ; `; 
         const [res2] = await connection.promise().execute(updateDistributionProduct);
         res.header("x-auth-token", token).status(200).send("Delivery is not successful");
     } catch (error) {

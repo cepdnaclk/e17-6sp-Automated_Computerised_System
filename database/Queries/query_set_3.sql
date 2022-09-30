@@ -11,7 +11,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON victa.issued_product TO 'distribution_ma
 GRANT SELECT ON victa.distribution_manager TO 'distribution_manager';
 GRANT INSERT, UPDATE
 	(DistributionOrderId, BatchNumber, Quantity, 
-    IssuedDMUserName, SalesAgentUserName, DestinedShopName) 
+    IssuedDMUserName, SalesAgentUserName, DestinedShopName, DeliveryStatus) 
     ON victa.distributed_product TO 'distribution_manager';
 GRANT SELECT, DELETE ON victa.distributed_product TO 'distribution_manager';
 GRANT SELECT ON victa.shop to 'distribution_manager';
