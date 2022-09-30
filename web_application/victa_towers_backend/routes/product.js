@@ -27,6 +27,9 @@ router.get("/", auth, async (req, res) => {
     }
 });
 
+/*
+A route to insert details into product table by the company head
+*/
 router.post("/", auth, async (req, res) => {
     const fromJwt = req.fromUser;
     const body = req.body;
@@ -44,7 +47,7 @@ router.post("/", auth, async (req, res) => {
             },
             "victa_jwtPrivateKey"
         );
-        res.header("x-auth-token", token).status(200).send(response);
+        res.header("x-auth-token", token).status(200).send("Successfully inserted the new product details");
     } catch (error) {
         console.log(error);
         res.status(400).send("Database failure");
