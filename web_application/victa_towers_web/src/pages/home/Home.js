@@ -9,11 +9,11 @@ function Home() {
   return (
     <>
       <TopBar />
+
       { /*<SalesAgent />*/ }
       { /*<DistributionManager />*/ }
       { <FactoryManager /> }
     </>
   );
 }
-
 export default Home;
