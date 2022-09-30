@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `victa`.`factory_product` (
   `FactoryProductName` VARCHAR(50) NOT NULL,
   `Quantity` INT NULL,
   `EnteredFMUserName` VARCHAR(20) NOT NULL,
-  `IsIssued` TINYINT NULL,
+  `IsIssued` TINYINT NULL DEFAULT 0,
   `IssuedFMUserName` VARCHAR(20) NULL,
   PRIMARY KEY (`BatchNumber`),
   INDEX `fk_factory_product_product_idx` (`FactoryProductName` ASC) VISIBLE,
@@ -102,8 +102,8 @@ CREATE TABLE IF NOT EXISTS `victa`.`issued_product` (
   `StoredQuantity` INT NULL,
   `CheckedDMUserName` VARCHAR(20) NOT NULL,
   `Note` VARCHAR(50) NULL,
-  `RecevingStatus` TINYINT NULL,
-  `ReceivingQuantity` INT NULL,
+  `ReceivingStatus` TINYINT NULL DEFAULT 0,
+  `CurrentQuantity` INT NULL,
   PRIMARY KEY (`BatchNumber`),
   INDEX `fk_issued_product_distribution_manager1_idx` (`CheckedDMUserName` ASC) VISIBLE,
   CONSTRAINT `fk_issued_product_distribution_manager1`
@@ -118,14 +118,10 @@ ENGINE = InnoDB;
 -- Table `victa`.`shop`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `victa`.`shop` (
-  `ShopId` INT NOT NULL,
-  `Name` VARCHAR(45) NULL,
-  `No` INT NULL,
-  `Road` VARCHAR(45) NULL,
-  `Town` VARCHAR(45) NULL,
-  `City` VARCHAR(45) NULL,
+  `ShopName` VARCHAR(50) NOT NULL,
+  `Address` VARCHAR(100) NULL,
   `Contact` VARCHAR(12) NULL,
-  PRIMARY KEY (`ShopId`))
+  PRIMARY KEY (`ShopName`))
 ENGINE = InnoDB;
 
 
@@ -138,30 +134,32 @@ CREATE TABLE IF NOT EXISTS `victa`.`distributed_product` (
   `Quantity` INT NULL,
   `IssuedDMUserName` VARCHAR(20) NOT NULL,
   `SalesAgentUserName` VARCHAR(20) NOT NULL,
-  `DestinedShopId` INT NOT NULL,
+  `DestinedShopName` VARCHAR(50) NOT NULL,
   `DeliveredQuantity` INT NULL,
-  `DelivaryStatus` TINYINT NULL,
+  `DeliveryStatus` TINYINT NULL DEFAULT 0,
   PRIMARY KEY (`DistributionOrderId`),
   INDEX `fk_distributed_product_distribution_manager1_idx` (`IssuedDMUserName` ASC) VISIBLE,
   INDEX `fk_distributed_product_sales_agent1_idx` (`SalesAgentUserName` ASC) VISIBLE,
-  INDEX `fk_distributed_product_shop1_idx` (`DestinedShopId` ASC) VISIBLE,
+  INDEX `fk_distributed_product_shop1_idx` (`DestinedShopName` ASC) VISIBLE,
   CONSTRAINT `fk_distributed_product_distribution_manager1`
     FOREIGN KEY (`IssuedDMUserName`)
     REFERENCES `victa`.`distribution_manager` (`UserName`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON UPDATE CASCADE,
   CONSTRAINT `fk_distributed_product_sales_agent1`
     FOREIGN KEY (`SalesAgentUserName`)
     REFERENCES `victa`.`sales_agent` (`UserName`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+    ON UPDATE CASCADE,
   CONSTRAINT `fk_distributed_product_shop1`
-    FOREIGN KEY (`DestinedShopId`)
-    REFERENCES `victa`.`shop` (`ShopId`)
+    FOREIGN KEY (`DestinedShopName`)
+    REFERENCES `victa`.`shop` (`ShopName`)
     ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+    ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
+ALTER TABLE `victa`.`distributed_product` 
+CHANGE COLUMN `DistributionOrderId` `DistributionOrderId` INT NOT NULL AUTO_INCREMENT ;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
