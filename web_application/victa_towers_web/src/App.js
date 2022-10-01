@@ -4,8 +4,8 @@ import UserCreate from './pages/signup/usercreate'; // signup page
 import Entry from './components/Entry/Entry';
 
 function App() {
-  // return <Login />;
-  return <Home />;
+   return <Login />;
+  //return <Home />;
   //return <UserCreate /> ;
 }
 
