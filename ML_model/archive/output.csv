@@ -1,0 +1,1001 @@
+,City,Product line,Date,Time,Rating
+0,Yangon,Health and beauty,01/05/2019,13:08,9.1
+1,Naypyitaw,Electronic accessories,03/08/2019,10:29,9.6
+2,Yangon,Home and lifestyle,03/03/2019,13:23,7.4
+3,Yangon,Health and beauty,1/27/2019,20:33,8.4
+4,Yangon,Sports and travel,02/08/2019,10:37,5.3
+5,Naypyitaw,Electronic accessories,3/25/2019,18:30,4.1
+6,Yangon,Electronic accessories,2/25/2019,14:36,5.8
+7,Naypyitaw,Home and lifestyle,2/24/2019,11:38,8.0
+8,Yangon,Health and beauty,01/10/2019,17:15,7.2
+9,Mandalay,Food and beverages,2/20/2019,13:27,5.9
+10,Mandalay,Fashion accessories,02/06/2019,18:07,4.5
+11,Mandalay,Electronic accessories,03/09/2019,17:03,6.8
+12,Yangon,Electronic accessories,02/12/2019,10:25,7.1
+13,Yangon,Food and beverages,02/07/2019,16:48,8.2
+14,Yangon,Health and beauty,3/29/2019,19:21,5.7
+15,Mandalay,Sports and travel,1/15/2019,16:19,4.5
+16,Yangon,Health and beauty,03/11/2019,11:03,4.6
+17,Yangon,Sports and travel,01/01/2019,10:39,6.9
+18,Yangon,Food and beverages,1/21/2019,18:00,8.6
+19,Mandalay,Home and lifestyle,03/11/2019,15:30,4.4
+20,Naypyitaw,Electronic accessories,2/25/2019,11:24,4.8
+21,Mandalay,Health and beauty,03/05/2019,10:40,5.1
+22,Mandalay,Home and lifestyle,3/15/2019,12:20,4.4
+23,Yangon,Electronic accessories,2/17/2019,11:15,9.9
+24,Yangon,Sports and travel,03/02/2019,17:36,6.0
+25,Yangon,Home and lifestyle,3/22/2019,19:20,8.5
+26,Mandalay,Fashion accessories,02/08/2019,15:31,6.7
+27,Yangon,Fashion accessories,03/10/2019,12:17,7.7
+28,Mandalay,Food and beverages,1/25/2019,19:48,9.6
+29,Yangon,Health and beauty,3/15/2019,15:36,7.4
+30,Mandalay,Fashion accessories,2/25/2019,19:39,4.8
+31,Mandalay,Sports and travel,1/28/2019,12:43,4.5
+32,Mandalay,Sports and travel,01/10/2019,14:49,5.1
+33,Yangon,Health and beauty,3/15/2019,10:12,5.1
+34,Naypyitaw,Food and beverages,02/06/2019,10:42,7.5
+35,Naypyitaw,Sports and travel,01/07/2019,12:28,6.8
+36,Yangon,Sports and travel,03/10/2019,19:15,7.0
+37,Yangon,Electronic accessories,1/15/2019,17:17,4.7
+38,Naypyitaw,Health and beauty,3/23/2019,13:24,7.6
+39,Mandalay,Home and lifestyle,03/03/2019,13:01,7.7
+40,Mandalay,Home and lifestyle,1/17/2019,18:45,7.9
+41,Naypyitaw,Home and lifestyle,02/02/2019,10:11,6.3
+42,Mandalay,Sports and travel,02/08/2019,13:03,5.6
+43,Naypyitaw,Food and beverages,03/04/2019,20:39,7.6
+44,Naypyitaw,Health and beauty,3/16/2019,19:47,7.2
+45,Mandalay,Electronic accessories,03/09/2019,18:00,9.5
+46,Mandalay,Health and beauty,2/27/2019,17:24,8.4
+47,Mandalay,Food and beverages,02/06/2019,15:47,4.1
+48,Mandalay,Electronic accessories,02/10/2019,12:45,8.1
+49,Naypyitaw,Fashion accessories,3/19/2019,17:08,7.9
+50,Naypyitaw,Food and beverages,02/03/2019,10:19,9.5
+51,Yangon,Food and beverages,02/10/2019,15:10,8.5
+52,Mandalay,Fashion accessories,3/22/2019,14:42,6.5
+53,Naypyitaw,Fashion accessories,1/25/2019,15:46,6.1
+54,Mandalay,Home and lifestyle,03/07/2019,11:49,6.5
+55,Naypyitaw,Electronic accessories,2/28/2019,19:01,8.2
+56,Yangon,Home and lifestyle,3/27/2019,11:26,5.8
+57,Yangon,Health and beauty,02/07/2019,11:28,6.6
+58,Yangon,Home and lifestyle,1/20/2019,15:55,5.4
+59,Naypyitaw,Electronic accessories,03/12/2019,20:36,9.3
+60,Naypyitaw,Sports and travel,2/15/2019,17:47,10.0
+61,Naypyitaw,Home and lifestyle,2/24/2019,10:55,7.0
+62,Mandalay,Sports and travel,02/03/2019,13:40,10.0
+63,Yangon,Sports and travel,03/06/2019,12:27,8.6
+64,Mandalay,Health and beauty,2/14/2019,14:35,7.6
+65,Yangon,Health and beauty,3/13/2019,16:40,5.8
+66,Naypyitaw,Health and beauty,02/10/2019,15:43,6.7
+67,Mandalay,Fashion accessories,01/07/2019,15:01,9.9
+68,Yangon,Sports and travel,1/24/2019,10:04,6.4
+69,Yangon,Health and beauty,02/02/2019,18:50,4.3
+70,Naypyitaw,Food and beverages,01/06/2019,12:46,9.6
+71,Naypyitaw,Fashion accessories,02/11/2019,16:19,5.9
+72,Mandalay,Food and beverages,03/05/2019,18:17,4.0
+73,Naypyitaw,Electronic accessories,03/09/2019,18:21,8.7
+74,Yangon,Home and lifestyle,1/22/2019,10:55,9.4
+75,Naypyitaw,Electronic accessories,1/13/2019,17:04,5.4
+76,Naypyitaw,Fashion accessories,01/09/2019,14:20,8.6
+77,Yangon,Fashion accessories,01/12/2019,15:48,5.7
+78,Naypyitaw,Food and beverages,03/05/2019,16:24,6.6
+79,Naypyitaw,Health and beauty,1/22/2019,18:56,6.0
+80,Naypyitaw,Health and beauty,1/21/2019,14:42,5.5
+81,Mandalay,Food and beverages,1/26/2019,19:56,6.4
+82,Naypyitaw,Food and beverages,1/23/2019,18:37,6.6
+83,Naypyitaw,Food and beverages,2/23/2019,18:45,8.3
+84,Naypyitaw,Sports and travel,03/09/2019,10:17,6.6
+85,Naypyitaw,Sports and travel,03/05/2019,14:31,4.0
+86,Naypyitaw,Fashion accessories,3/25/2019,10:23,9.9
+87,Yangon,Food and beverages,3/27/2019,20:35,7.3
+88,Yangon,Sports and travel,01/02/2019,16:57,5.7
+89,Mandalay,Health and beauty,2/27/2019,17:55,6.1
+90,Naypyitaw,Home and lifestyle,1/23/2019,10:25,7.1
+91,Naypyitaw,Sports and travel,1/26/2019,19:54,8.2
+92,Yangon,Sports and travel,01/10/2019,16:42,5.1
+93,Mandalay,Health and beauty,03/12/2019,12:09,8.6
+94,Naypyitaw,Health and beauty,02/06/2019,20:05,6.6
+95,Yangon,Electronic accessories,03/08/2019,20:38,7.2
+96,Mandalay,Health and beauty,3/29/2019,10:25,5.1
+97,Naypyitaw,Electronic accessories,02/09/2019,13:11,4.1
+98,Yangon,Food and beverages,3/23/2019,10:16,9.3
+99,Mandalay,Home and lifestyle,03/05/2019,18:14,7.4
+100,Naypyitaw,Fashion accessories,3/26/2019,19:20,4.1
+101,Naypyitaw,Fashion accessories,03/01/2019,13:22,7.2
+102,Naypyitaw,Electronic accessories,02/01/2019,11:27,4.9
+103,Yangon,Food and beverages,3/28/2019,16:44,9.9
+104,Mandalay,Health and beauty,3/19/2019,18:19,8.0
+105,Yangon,Electronic accessories,01/12/2019,14:50,7.3
+106,Naypyitaw,Fashion accessories,01/05/2019,20:54,7.9
+107,Yangon,Sports and travel,3/22/2019,20:19,7.4
+108,Naypyitaw,Food and beverages,3/24/2019,10:43,4.2
+109,Naypyitaw,Electronic accessories,03/03/2019,14:30,9.2
+110,Mandalay,Sports and travel,02/05/2019,11:32,4.6
+111,Naypyitaw,Health and beauty,02/05/2019,10:41,7.8
+112,Mandalay,Fashion accessories,2/15/2019,12:44,8.4
+113,Yangon,Home and lifestyle,1/19/2019,20:07,4.3
+114,Naypyitaw,Home and lifestyle,02/01/2019,20:31,9.5
+115,Naypyitaw,Fashion accessories,03/02/2019,13:01,7.1
+116,Mandalay,Fashion accessories,03/05/2019,12:29,5.3
+117,Mandalay,Fashion accessories,1/16/2019,15:26,5.2
+118,Yangon,Food and beverages,02/02/2019,20:48,6.0
+119,Mandalay,Home and lifestyle,1/20/2019,20:38,4.1
+120,Yangon,Electronic accessories,2/14/2019,17:03,5.2
+121,Naypyitaw,Sports and travel,01/12/2019,12:02,6.5
+122,Mandalay,Sports and travel,03/09/2019,17:26,4.2
+123,Naypyitaw,Home and lifestyle,3/13/2019,19:52,4.6
+124,Mandalay,Fashion accessories,03/09/2019,14:57,7.3
+125,Yangon,Home and lifestyle,03/10/2019,18:44,4.5
+126,Yangon,Sports and travel,1/27/2019,13:26,9.0
+127,Naypyitaw,Fashion accessories,01/08/2019,16:17,5.9
+128,Naypyitaw,Food and beverages,01/08/2019,15:57,8.5
+129,Mandalay,Sports and travel,02/08/2019,11:15,7.2
+130,Mandalay,Fashion accessories,1/25/2019,13:18,7.5
+131,Yangon,Sports and travel,03/06/2019,20:34,8.3
+132,Mandalay,Sports and travel,02/10/2019,18:36,7.4
+133,Mandalay,Electronic accessories,2/17/2019,14:40,8.8
+134,Naypyitaw,Health and beauty,03/08/2019,16:43,5.3
+135,Naypyitaw,Fashion accessories,2/18/2019,19:39,6.2
+136,Yangon,Electronic accessories,1/18/2019,20:59,8.8
+137,Yangon,Home and lifestyle,2/18/2019,15:39,9.8
+138,Mandalay,Sports and travel,2/16/2019,12:21,8.2
+139,Yangon,Sports and travel,3/16/2019,19:25,9.2
+140,Naypyitaw,Sports and travel,1/23/2019,13:00,5.4
+141,Naypyitaw,Health and beauty,1/25/2019,13:48,8.1
+142,Naypyitaw,Health and beauty,02/05/2019,19:57,9.1
+143,Naypyitaw,Food and beverages,2/22/2019,10:36,8.4
+144,Yangon,Home and lifestyle,1/21/2019,16:37,8.0
+145,Naypyitaw,Health and beauty,03/08/2019,17:11,9.5
+146,Yangon,Fashion accessories,02/10/2019,12:28,9.2
+147,Naypyitaw,Health and beauty,3/19/2019,12:46,5.6
+148,Mandalay,Home and lifestyle,03/06/2019,15:07,6.2
+149,Yangon,Health and beauty,3/27/2019,13:48,4.9
+150,Mandalay,Fashion accessories,3/23/2019,19:20,4.8
+151,Naypyitaw,Sports and travel,03/11/2019,16:07,7.3
+152,Yangon,Fashion accessories,1/29/2019,11:56,7.4
+153,Naypyitaw,Food and beverages,02/07/2019,18:23,9.9
+154,Naypyitaw,Sports and travel,1/28/2019,13:05,9.3
+155,Yangon,Food and beverages,2/20/2019,15:55,9.0
+156,Mandalay,Electronic accessories,01/04/2019,19:40,6.1
+157,Mandalay,Home and lifestyle,03/07/2019,13:58,9.7
+158,Mandalay,Health and beauty,3/30/2019,14:43,6.0
+159,Mandalay,Sports and travel,3/27/2019,19:18,10.0
+160,Naypyitaw,Food and beverages,1/19/2019,19:39,8.3
+161,Yangon,Sports and travel,2/25/2019,16:21,6.0
+162,Yangon,Food and beverages,3/13/2019,19:44,7.0
+163,Naypyitaw,Sports and travel,1/30/2019,19:42,6.5
+164,Mandalay,Food and beverages,2/20/2019,15:24,5.9
+165,Mandalay,Health and beauty,2/25/2019,14:12,5.6
+166,Naypyitaw,Home and lifestyle,1/16/2019,13:32,4.8
+167,Yangon,Fashion accessories,02/08/2019,16:20,8.7
+168,Yangon,Food and beverages,1/19/2019,16:31,6.5
+169,Yangon,Sports and travel,02/01/2019,15:10,8.5
+170,Yangon,Health and beauty,01/03/2019,11:36,5.5
+171,Mandalay,Food and beverages,1/26/2019,12:45,9.4
+172,Naypyitaw,Electronic accessories,03/03/2019,19:17,6.3
+173,Mandalay,Electronic accessories,1/19/2019,17:34,9.8
+174,Mandalay,Food and beverages,1/18/2019,12:04,8.7
+175,Yangon,Home and lifestyle,3/21/2019,16:21,8.8
+176,Yangon,Food and beverages,03/03/2019,17:01,9.6
+177,Naypyitaw,Fashion accessories,2/13/2019,10:50,4.8
+178,Yangon,Food and beverages,3/23/2019,19:16,4.4
+179,Naypyitaw,Health and beauty,1/28/2019,16:47,9.9
+180,Naypyitaw,Fashion accessories,02/09/2019,10:00,5.7
+181,Naypyitaw,Food and beverages,1/23/2019,11:51,7.7
+182,Yangon,Sports and travel,3/23/2019,10:55,8.0
+183,Naypyitaw,Health and beauty,1/25/2019,15:00,5.7
+184,Yangon,Sports and travel,03/04/2019,11:19,6.7
+185,Mandalay,Food and beverages,03/05/2019,19:46,8.0
+186,Mandalay,Home and lifestyle,03/03/2019,19:00,7.5
+187,Mandalay,Home and lifestyle,02/08/2019,10:53,7.0
+188,Yangon,Home and lifestyle,02/10/2019,12:50,9.9
+189,Naypyitaw,Home and lifestyle,1/28/2019,20:50,5.9
+190,Mandalay,Home and lifestyle,02/11/2019,10:39,7.2
+191,Mandalay,Fashion accessories,1/15/2019,13:41,4.6
+192,Naypyitaw,Food and beverages,3/16/2019,19:08,9.2
+193,Mandalay,Home and lifestyle,1/26/2019,20:23,5.7
+194,Yangon,Electronic accessories,3/19/2019,11:30,9.9
+195,Naypyitaw,Fashion accessories,1/13/2019,19:30,5.0
+196,Naypyitaw,Health and beauty,3/26/2019,18:03,4.9
+197,Yangon,Home and lifestyle,3/23/2019,10:13,6.1
+198,Naypyitaw,Health and beauty,03/12/2019,19:58,8.2
+199,Naypyitaw,Food and beverages,2/17/2019,19:57,5.5
+200,Naypyitaw,Sports and travel,1/29/2019,10:01,6.8
+201,Mandalay,Electronic accessories,3/15/2019,11:57,6.6
+202,Naypyitaw,Electronic accessories,1/14/2019,10:02,9.8
+203,Mandalay,Health and beauty,02/06/2019,14:51,8.7
+204,Mandalay,Home and lifestyle,2/15/2019,12:42,5.4
+205,Yangon,Health and beauty,01/03/2019,12:02,7.9
+206,Naypyitaw,Electronic accessories,01/04/2019,18:19,9.7
+207,Naypyitaw,Home and lifestyle,3/18/2019,17:38,7.8
+208,Mandalay,Fashion accessories,3/28/2019,13:41,5.1
+209,Mandalay,Electronic accessories,03/02/2019,19:42,6.5
+210,Yangon,Electronic accessories,1/25/2019,20:24,5.9
+211,Naypyitaw,Food and beverages,1/16/2019,18:08,8.8
+212,Mandalay,Home and lifestyle,3/20/2019,19:17,4.9
+213,Mandalay,Sports and travel,01/04/2019,13:24,4.4
+214,Mandalay,Sports and travel,03/11/2019,15:53,6.5
+215,Yangon,Home and lifestyle,3/22/2019,15:05,8.3
+216,Mandalay,Sports and travel,3/24/2019,18:27,8.5
+217,Yangon,Electronic accessories,2/21/2019,16:55,5.5
+218,Mandalay,Fashion accessories,02/12/2019,12:58,8.7
+219,Mandalay,Food and beverages,03/10/2019,18:59,7.9
+220,Mandalay,Electronic accessories,1/31/2019,13:44,6.1
+221,Mandalay,Food and beverages,03/06/2019,13:46,5.4
+222,Naypyitaw,Electronic accessories,2/17/2019,18:06,9.4
+223,Naypyitaw,Fashion accessories,2/21/2019,12:38,8.2
+224,Yangon,Food and beverages,3/20/2019,15:56,6.2
+225,Naypyitaw,Sports and travel,01/11/2019,14:29,9.7
+226,Mandalay,Health and beauty,1/26/2019,19:14,4.0
+227,Naypyitaw,Electronic accessories,1/31/2019,16:24,9.7
+228,Mandalay,Electronic accessories,2/26/2019,10:52,5.3
+229,Yangon,Home and lifestyle,03/11/2019,12:55,7.4
+230,Mandalay,Fashion accessories,1/26/2019,19:28,6.5
+231,Mandalay,Electronic accessories,03/12/2019,13:52,8.7
+232,Mandalay,Health and beauty,02/11/2019,10:54,8.0
+233,Mandalay,Fashion accessories,2/21/2019,18:31,6.7
+234,Yangon,Health and beauty,03/09/2019,18:24,6.5
+235,Yangon,Sports and travel,1/20/2019,18:09,4.1
+236,Naypyitaw,Health and beauty,1/28/2019,15:16,4.9
+237,Naypyitaw,Fashion accessories,03/05/2019,17:07,8.6
+238,Mandalay,Electronic accessories,03/02/2019,19:26,4.3
+239,Yangon,Fashion accessories,01/11/2019,11:20,4.9
+240,Yangon,Food and beverages,01/11/2019,16:49,5.6
+241,Yangon,Health and beauty,03/11/2019,12:01,5.8
+242,Naypyitaw,Fashion accessories,2/28/2019,18:37,6.0
+243,Yangon,Home and lifestyle,01/05/2019,11:25,4.2
+244,Mandalay,Home and lifestyle,02/02/2019,18:42,8.3
+245,Yangon,Home and lifestyle,01/01/2019,14:47,5.7
+246,Mandalay,Electronic accessories,02/09/2019,19:43,4.8
+247,Yangon,Fashion accessories,1/23/2019,14:04,6.8
+248,Yangon,Electronic accessories,01/07/2019,16:11,8.8
+249,Mandalay,Food and beverages,1/14/2019,19:06,4.2
+250,Mandalay,Food and beverages,02/02/2019,15:34,6.4
+251,Naypyitaw,Fashion accessories,3/17/2019,19:06,8.4
+252,Naypyitaw,Sports and travel,03/02/2019,19:44,7.2
+253,Yangon,Home and lifestyle,3/16/2019,11:22,5.2
+254,Yangon,Home and lifestyle,01/06/2019,11:23,8.9
+255,Mandalay,Fashion accessories,1/29/2019,14:12,9.0
+256,Yangon,Electronic accessories,1/31/2019,10:46,9.7
+257,Yangon,Home and lifestyle,02/05/2019,10:16,8.7
+258,Yangon,Electronic accessories,2/13/2019,12:38,6.5
+259,Naypyitaw,Electronic accessories,02/07/2019,13:05,6.9
+260,Yangon,Electronic accessories,3/19/2019,13:25,6.2
+261,Naypyitaw,Fashion accessories,03/07/2019,14:53,5.6
+262,Mandalay,Fashion accessories,3/13/2019,19:22,5.7
+263,Yangon,Sports and travel,02/09/2019,11:00,4.2
+264,Mandalay,Sports and travel,2/26/2019,19:24,7.9
+265,Yangon,Sports and travel,03/12/2019,12:43,8.7
+266,Naypyitaw,Home and lifestyle,3/14/2019,17:22,6.9
+267,Mandalay,Food and beverages,01/08/2019,20:55,9.5
+268,Yangon,Home and lifestyle,01/05/2019,16:05,4.4
+269,Yangon,Home and lifestyle,01/04/2019,13:34,7.0
+270,Mandalay,Sports and travel,03/06/2019,18:13,6.3
+271,Naypyitaw,Health and beauty,01/03/2019,19:17,9.7
+272,Yangon,Home and lifestyle,01/07/2019,11:44,8.8
+273,Yangon,Home and lifestyle,1/27/2019,15:51,5.1
+274,Mandalay,Health and beauty,2/26/2019,16:52,7.9
+275,Mandalay,Fashion accessories,01/07/2019,20:52,6.2
+276,Naypyitaw,Home and lifestyle,01/07/2019,17:36,7.1
+277,Naypyitaw,Fashion accessories,02/02/2019,13:23,6.4
+278,Naypyitaw,Fashion accessories,3/20/2019,16:28,5.7
+279,Yangon,Sports and travel,3/20/2019,19:57,9.6
+280,Yangon,Home and lifestyle,2/15/2019,17:01,6.4
+281,Naypyitaw,Home and lifestyle,03/06/2019,13:29,7.9
+282,Yangon,Sports and travel,01/06/2019,11:09,6.5
+283,Yangon,Health and beauty,03/04/2019,15:02,8.5
+284,Yangon,Health and beauty,03/12/2019,14:21,9.1
+285,Mandalay,Health and beauty,2/20/2019,18:01,7.6
+286,Naypyitaw,Home and lifestyle,3/24/2019,14:49,6.9
+287,Naypyitaw,Sports and travel,1/31/2019,12:02,9.5
+288,Mandalay,Food and beverages,1/25/2019,13:30,5.2
+289,Yangon,Home and lifestyle,02/03/2019,14:38,4.2
+290,Mandalay,Electronic accessories,1/24/2019,17:37,7.0
+291,Naypyitaw,Electronic accessories,3/14/2019,17:20,6.0
+292,Yangon,Electronic accessories,2/18/2019,20:29,4.7
+293,Yangon,Food and beverages,1/21/2019,10:00,7.1
+294,Mandalay,Health and beauty,3/13/2019,11:46,5.9
+295,Naypyitaw,Electronic accessories,03/03/2019,13:42,7.5
+296,Naypyitaw,Electronic accessories,3/29/2019,14:44,6.4
+297,Yangon,Home and lifestyle,01/10/2019,14:16,5.8
+298,Yangon,Home and lifestyle,1/25/2019,15:54,4.5
+299,Naypyitaw,Home and lifestyle,1/19/2019,10:21,7.7
+300,Naypyitaw,Fashion accessories,01/02/2019,18:09,6.7
+301,Mandalay,Health and beauty,03/12/2019,16:46,4.7
+302,Naypyitaw,Food and beverages,2/25/2019,15:31,4.4
+303,Yangon,Electronic accessories,3/18/2019,17:15,4.7
+304,Mandalay,Electronic accessories,2/23/2019,12:29,8.6
+305,Yangon,Electronic accessories,3/26/2019,20:14,4.3
+306,Yangon,Sports and travel,3/30/2019,13:22,9.6
+307,Yangon,Home and lifestyle,2/17/2019,17:09,4.1
+308,Yangon,Electronic accessories,3/21/2019,10:40,4.7
+309,Yangon,Fashion accessories,03/05/2019,17:43,7.8
+310,Mandalay,Sports and travel,1/31/2019,14:04,5.5
+311,Naypyitaw,Fashion accessories,02/05/2019,19:05,9.7
+312,Yangon,Food and beverages,02/01/2019,10:08,4.4
+313,Yangon,Health and beauty,03/07/2019,13:12,5.0
+314,Naypyitaw,Electronic accessories,02/10/2019,20:51,4.4
+315,Naypyitaw,Food and beverages,2/14/2019,17:29,5.2
+316,Naypyitaw,Food and beverages,02/09/2019,10:25,7.3
+317,Naypyitaw,Electronic accessories,01/10/2019,11:34,4.9
+318,Naypyitaw,Health and beauty,03/11/2019,18:58,8.1
+319,Naypyitaw,Health and beauty,2/18/2019,16:28,8.4
+320,Naypyitaw,Food and beverages,2/26/2019,20:26,5.5
+321,Naypyitaw,Health and beauty,1/18/2019,15:08,8.4
+322,Yangon,Health and beauty,2/15/2019,18:03,9.8
+323,Yangon,Fashion accessories,03/08/2019,13:21,6.7
+324,Yangon,Home and lifestyle,1/17/2019,12:48,9.4
+325,Mandalay,Sports and travel,03/12/2019,19:53,6.4
+326,Yangon,Food and beverages,03/09/2019,19:09,5.4
+327,Naypyitaw,Food and beverages,03/12/2019,16:30,8.6
+328,Mandalay,Health and beauty,1/25/2019,10:11,4.0
+329,Yangon,Electronic accessories,3/25/2019,13:07,7.6
+330,Mandalay,Home and lifestyle,02/07/2019,18:48,6.8
+331,Yangon,Food and beverages,2/17/2019,17:27,9.1
+332,Yangon,Fashion accessories,02/03/2019,15:59,5.5
+333,Yangon,Food and beverages,3/14/2019,11:21,7.9
+334,Naypyitaw,Sports and travel,3/24/2019,13:48,8.5
+335,Yangon,Electronic accessories,3/21/2019,10:17,9.1
+336,Yangon,Fashion accessories,3/19/2019,15:49,7.5
+337,Mandalay,Sports and travel,2/24/2019,13:02,5.2
+338,Naypyitaw,Electronic accessories,3/28/2019,12:58,9.5
+339,Mandalay,Food and beverages,02/05/2019,15:26,8.9
+340,Mandalay,Electronic accessories,02/10/2019,18:23,7.8
+341,Mandalay,Health and beauty,03/05/2019,19:06,8.9
+342,Mandalay,Health and beauty,2/15/2019,20:21,7.7
+343,Naypyitaw,Food and beverages,1/30/2019,16:24,9.3
+344,Yangon,Sports and travel,2/14/2019,15:04,6.2
+345,Yangon,Fashion accessories,2/27/2019,16:10,7.6
+346,Yangon,Electronic accessories,02/04/2019,12:14,7.3
+347,Naypyitaw,Home and lifestyle,1/20/2019,10:13,4.7
+348,Yangon,Electronic accessories,3/28/2019,17:38,5.1
+349,Mandalay,Health and beauty,2/27/2019,11:06,4.8
+350,Naypyitaw,Fashion accessories,2/15/2019,14:53,6.6
+351,Yangon,Electronic accessories,1/26/2019,18:22,5.5
+352,Mandalay,Fashion accessories,3/14/2019,19:02,8.5
+353,Mandalay,Home and lifestyle,03/02/2019,14:16,4.8
+354,Naypyitaw,Electronic accessories,03/04/2019,15:44,8.4
+355,Mandalay,Food and beverages,01/07/2019,12:20,7.8
+356,Naypyitaw,Fashion accessories,03/08/2019,20:01,9.3
+357,Naypyitaw,Sports and travel,01/09/2019,13:45,5.2
+358,Mandalay,Electronic accessories,03/01/2019,15:40,6.5
+359,Mandalay,Sports and travel,3/16/2019,16:58,5.6
+360,Yangon,Food and beverages,2/17/2019,11:12,7.4
+361,Naypyitaw,Food and beverages,2/27/2019,15:12,9.1
+362,Naypyitaw,Food and beverages,03/07/2019,20:37,8.0
+363,Yangon,Home and lifestyle,1/21/2019,17:44,7.2
+364,Naypyitaw,Food and beverages,2/19/2019,16:23,7.1
+365,Naypyitaw,Fashion accessories,01/06/2019,12:12,9.1
+366,Naypyitaw,Electronic accessories,3/14/2019,19:33,5.6
+367,Yangon,Home and lifestyle,3/24/2019,10:29,6.0
+368,Naypyitaw,Sports and travel,1/27/2019,14:28,5.4
+369,Yangon,Electronic accessories,03/06/2019,12:46,7.8
+370,Mandalay,Electronic accessories,02/02/2019,19:40,9.9
+371,Mandalay,Fashion accessories,1/25/2019,19:39,4.9
+372,Naypyitaw,Home and lifestyle,3/14/2019,17:54,5.2
+373,Naypyitaw,Fashion accessories,1/29/2019,12:25,8.9
+374,Yangon,Home and lifestyle,01/03/2019,16:47,9.1
+375,Yangon,Fashion accessories,1/14/2019,12:52,7.0
+376,Mandalay,Home and lifestyle,01/05/2019,19:50,9.6
+377,Naypyitaw,Sports and travel,2/22/2019,18:17,8.7
+378,Naypyitaw,Fashion accessories,02/06/2019,17:20,9.4
+379,Mandalay,Electronic accessories,1/30/2019,13:32,4.0
+380,Yangon,Sports and travel,01/11/2019,10:37,7.5
+381,Naypyitaw,Electronic accessories,3/19/2019,14:35,4.2
+382,Mandalay,Food and beverages,1/14/2019,12:09,9.9
+383,Naypyitaw,Food and beverages,03/01/2019,15:32,4.2
+384,Yangon,Food and beverages,01/06/2019,13:58,9.9
+385,Mandalay,Sports and travel,1/31/2019,13:19,5.8
+386,Naypyitaw,Food and beverages,03/11/2019,13:37,6.0
+387,Yangon,Health and beauty,2/20/2019,16:49,10.0
+388,Naypyitaw,Fashion accessories,1/27/2019,14:55,9.5
+389,Mandalay,Food and beverages,03/10/2019,14:04,6.6
+390,Naypyitaw,Fashion accessories,2/15/2019,12:31,8.1
+391,Mandalay,Fashion accessories,1/26/2019,14:51,9.7
+392,Yangon,Electronic accessories,2/13/2019,18:27,7.2
+393,Yangon,Sports and travel,03/09/2019,12:45,6.2
+394,Yangon,Health and beauty,03/06/2019,10:36,7.3
+395,Yangon,Health and beauty,1/24/2019,20:36,4.3
+396,Yangon,Food and beverages,3/13/2019,14:16,4.6
+397,Mandalay,Home and lifestyle,3/15/2019,10:26,5.8
+398,Mandalay,Health and beauty,03/05/2019,13:30,8.3
+399,Mandalay,Electronic accessories,03/04/2019,16:28,8.0
+400,Naypyitaw,Food and beverages,3/25/2019,20:18,9.4
+401,Naypyitaw,Home and lifestyle,03/12/2019,20:04,6.2
+402,Naypyitaw,Home and lifestyle,02/04/2019,13:38,9.8
+403,Mandalay,Fashion accessories,2/22/2019,10:43,9.6
+404,Naypyitaw,Fashion accessories,2/16/2019,17:30,4.9
+405,Yangon,Sports and travel,1/19/2019,15:28,8.0
+406,Yangon,Food and beverages,01/11/2019,19:07,7.8
+407,Mandalay,Fashion accessories,01/04/2019,19:01,4.1
+408,Yangon,Home and lifestyle,03/04/2019,19:48,5.5
+409,Naypyitaw,Fashion accessories,1/28/2019,19:24,5.4
+410,Mandalay,Health and beauty,01/02/2019,13:00,5.1
+411,Mandalay,Sports and travel,1/25/2019,14:29,6.9
+412,Yangon,Health and beauty,01/04/2019,13:21,7.8
+413,Yangon,Sports and travel,03/10/2019,18:55,6.6
+414,Yangon,Home and lifestyle,3/22/2019,19:36,9.2
+415,Mandalay,Health and beauty,1/25/2019,16:28,7.8
+416,Naypyitaw,Home and lifestyle,01/08/2019,13:48,8.7
+417,Naypyitaw,Health and beauty,1/22/2019,10:57,9.2
+418,Mandalay,Health and beauty,01/12/2019,17:13,8.3
+419,Yangon,Electronic accessories,02/04/2019,10:23,8.2
+420,Naypyitaw,Food and beverages,3/28/2019,13:57,7.5
+421,Naypyitaw,Electronic accessories,1/23/2019,13:29,9.8
+422,Naypyitaw,Fashion accessories,02/08/2019,13:00,8.7
+423,Mandalay,Fashion accessories,3/19/2019,19:42,6.7
+424,Naypyitaw,Fashion accessories,03/09/2019,15:36,5.0
+425,Mandalay,Fashion accessories,01/02/2019,13:40,7.0
+426,Yangon,Health and beauty,1/21/2019,18:01,8.9
+427,Mandalay,Food and beverages,3/20/2019,13:53,8.0
+428,Mandalay,Sports and travel,2/27/2019,17:27,6.9
+429,Yangon,Home and lifestyle,03/08/2019,10:53,7.3
+430,Mandalay,Fashion accessories,1/31/2019,19:48,6.9
+431,Naypyitaw,Food and beverages,03/08/2019,16:53,5.7
+432,Yangon,Electronic accessories,1/13/2019,19:14,6.4
+433,Mandalay,Fashion accessories,03/09/2019,14:36,9.6
+434,Mandalay,Fashion accessories,2/22/2019,18:19,6.8
+435,Naypyitaw,Sports and travel,3/19/2019,19:09,9.0
+436,Naypyitaw,Sports and travel,1/20/2019,16:51,9.6
+437,Yangon,Home and lifestyle,03/08/2019,15:37,7.7
+438,Naypyitaw,Food and beverages,03/08/2019,20:15,7.0
+439,Naypyitaw,Electronic accessories,02/07/2019,14:38,6.5
+440,Naypyitaw,Food and beverages,1/15/2019,19:25,8.1
+441,Mandalay,Sports and travel,3/22/2019,19:35,4.3
+442,Yangon,Home and lifestyle,1/15/2019,15:42,6.5
+443,Naypyitaw,Fashion accessories,01/08/2019,14:11,9.5
+444,Yangon,Sports and travel,1/15/2019,10:43,9.7
+445,Mandalay,Health and beauty,1/28/2019,17:58,9.5
+446,Naypyitaw,Food and beverages,2/14/2019,11:26,8.9
+447,Naypyitaw,Fashion accessories,03/10/2019,17:38,6.5
+448,Mandalay,Health and beauty,01/12/2019,20:07,5.3
+449,Mandalay,Sports and travel,3/26/2019,11:02,9.6
+450,Mandalay,Electronic accessories,01/01/2019,19:07,6.7
+451,Mandalay,Electronic accessories,01/02/2019,18:50,7.6
+452,Yangon,Food and beverages,3/16/2019,12:43,4.8
+453,Yangon,Health and beauty,03/03/2019,15:09,5.5
+454,Yangon,Electronic accessories,1/31/2019,13:47,4.7
+455,Mandalay,Fashion accessories,2/13/2019,16:59,6.9
+456,Mandalay,Food and beverages,2/15/2019,14:15,4.5
+457,Mandalay,Electronic accessories,02/07/2019,20:24,6.2
+458,Naypyitaw,Electronic accessories,1/27/2019,13:58,7.6
+459,Naypyitaw,Food and beverages,2/23/2019,16:52,7.9
+460,Naypyitaw,Food and beverages,02/03/2019,15:19,4.5
+461,Mandalay,Food and beverages,03/03/2019,12:25,8.7
+462,Naypyitaw,Sports and travel,02/03/2019,10:02,6.1
+463,Naypyitaw,Food and beverages,3/17/2019,18:58,6.4
+464,Yangon,Food and beverages,3/28/2019,15:31,9.1
+465,Naypyitaw,Sports and travel,03/02/2019,11:22,7.1
+466,Naypyitaw,Health and beauty,02/08/2019,13:12,7.7
+467,Mandalay,Sports and travel,3/22/2019,18:33,4.5
+468,Naypyitaw,Food and beverages,02/09/2019,10:02,7.2
+469,Naypyitaw,Electronic accessories,2/15/2019,11:21,8.4
+470,Naypyitaw,Home and lifestyle,1/23/2019,12:10,5.4
+471,Yangon,Sports and travel,1/25/2019,11:40,9.7
+472,Yangon,Fashion accessories,02/02/2019,18:31,5.5
+473,Mandalay,Health and beauty,3/30/2019,17:58,4.6
+474,Yangon,Electronic accessories,3/30/2019,17:04,6.6
+475,Yangon,Health and beauty,2/25/2019,20:35,6.3
+476,Yangon,Sports and travel,3/18/2019,16:10,4.2
+477,Naypyitaw,Electronic accessories,03/07/2019,16:54,4.4
+478,Mandalay,Sports and travel,3/16/2019,10:11,6.7
+479,Yangon,Electronic accessories,1/29/2019,11:26,6.7
+480,Naypyitaw,Food and beverages,02/02/2019,20:29,8.4
+481,Naypyitaw,Electronic accessories,2/15/2019,12:12,6.2
+482,Yangon,Sports and travel,01/08/2019,13:05,5.0
+483,Mandalay,Home and lifestyle,02/12/2019,16:19,6.0
+484,Naypyitaw,Sports and travel,01/01/2019,19:48,7.0
+485,Mandalay,Sports and travel,3/21/2019,15:25,6.6
+486,Mandalay,Fashion accessories,2/28/2019,14:42,7.3
+487,Yangon,Fashion accessories,3/23/2019,18:59,8.3
+488,Naypyitaw,Home and lifestyle,1/30/2019,20:47,4.3
+489,Mandalay,Home and lifestyle,02/04/2019,13:21,9.8
+490,Mandalay,Fashion accessories,3/13/2019,19:48,8.2
+491,Yangon,Fashion accessories,3/15/2019,18:20,7.2
+492,Mandalay,Health and beauty,03/05/2019,20:24,8.7
+493,Naypyitaw,Home and lifestyle,03/05/2019,13:44,8.4
+494,Mandalay,Fashion accessories,2/26/2019,11:48,7.1
+495,Mandalay,Sports and travel,3/20/2019,14:14,5.5
+496,Naypyitaw,Electronic accessories,01/01/2019,15:51,8.5
+497,Naypyitaw,Food and beverages,1/27/2019,11:17,6.2
+498,Mandalay,Sports and travel,1/21/2019,17:36,8.9
+499,Yangon,Sports and travel,02/02/2019,15:47,9.6
+500,Mandalay,Sports and travel,02/03/2019,15:53,5.4
+501,Naypyitaw,Fashion accessories,01/05/2019,12:40,9.1
+502,Naypyitaw,Home and lifestyle,1/27/2019,19:48,9.0
+503,Mandalay,Sports and travel,3/25/2019,17:53,6.3
+504,Mandalay,Sports and travel,2/25/2019,16:36,9.5
+505,Yangon,Electronic accessories,1/28/2019,20:54,9.8
+506,Mandalay,Sports and travel,01/08/2019,12:50,6.7
+507,Mandalay,Food and beverages,1/29/2019,10:48,7.7
+508,Mandalay,Health and beauty,3/29/2019,14:28,7.0
+509,Naypyitaw,Home and lifestyle,02/09/2019,17:15,5.1
+510,Mandalay,Sports and travel,1/16/2019,18:03,6.2
+511,Yangon,Home and lifestyle,01/05/2019,17:29,6.1
+512,Yangon,Fashion accessories,1/27/2019,18:05,9.3
+513,Yangon,Electronic accessories,3/14/2019,12:07,7.6
+514,Naypyitaw,Sports and travel,2/23/2019,19:49,8.2
+515,Naypyitaw,Fashion accessories,3/18/2019,15:52,8.5
+516,Mandalay,Health and beauty,3/29/2019,16:48,9.8
+517,Naypyitaw,Home and lifestyle,1/22/2019,20:46,8.7
+518,Yangon,Home and lifestyle,03/01/2019,18:14,9.7
+519,Naypyitaw,Sports and travel,1/17/2019,15:05,4.3
+520,Mandalay,Electronic accessories,3/26/2019,10:34,7.7
+521,Naypyitaw,Home and lifestyle,3/20/2019,11:23,7.3
+522,Yangon,Home and lifestyle,02/06/2019,13:55,5.9
+523,Naypyitaw,Health and beauty,01/01/2019,11:43,5.0
+524,Yangon,Food and beverages,1/27/2019,14:36,8.0
+525,Yangon,Sports and travel,2/25/2019,16:03,7.1
+526,Mandalay,Fashion accessories,1/16/2019,20:03,9.0
+527,Mandalay,Fashion accessories,1/13/2019,14:55,6.7
+528,Mandalay,Food and beverages,02/07/2019,11:28,6.1
+529,Yangon,Sports and travel,2/17/2019,19:41,9.3
+530,Yangon,Health and beauty,02/12/2019,19:01,7.0
+531,Yangon,Fashion accessories,1/24/2019,18:04,7.2
+532,Mandalay,Electronic accessories,02/06/2019,19:20,8.2
+533,Naypyitaw,Food and beverages,3/26/2019,10:31,8.4
+534,Yangon,Home and lifestyle,03/11/2019,13:28,6.2
+535,Naypyitaw,Home and lifestyle,02/07/2019,11:36,7.4
+536,Mandalay,Fashion accessories,01/05/2019,11:32,5.0
+537,Yangon,Home and lifestyle,03/07/2019,11:44,6.9
+538,Yangon,Fashion accessories,2/25/2019,17:16,4.9
+539,Naypyitaw,Food and beverages,02/01/2019,18:43,5.1
+540,Yangon,Home and lifestyle,1/22/2019,11:00,9.1
+541,Naypyitaw,Health and beauty,01/03/2019,10:30,7.1
+542,Mandalay,Sports and travel,2/13/2019,12:14,5.0
+543,Naypyitaw,Electronic accessories,1/28/2019,16:43,5.5
+544,Mandalay,Food and beverages,01/05/2019,20:40,9.2
+545,Mandalay,Home and lifestyle,3/19/2019,13:40,4.9
+546,Yangon,Fashion accessories,01/12/2019,16:23,8.9
+547,Yangon,Sports and travel,01/07/2019,12:08,6.0
+548,Mandalay,Sports and travel,1/26/2019,17:45,4.2
+549,Yangon,Electronic accessories,1/23/2019,10:28,7.3
+550,Mandalay,Fashion accessories,02/09/2019,20:31,6.5
+551,Mandalay,Fashion accessories,2/22/2019,10:49,8.9
+552,Mandalay,Health and beauty,02/05/2019,12:34,9.7
+553,Naypyitaw,Electronic accessories,03/07/2019,10:23,8.6
+554,Yangon,Electronic accessories,3/25/2019,18:51,6.9
+555,Mandalay,Home and lifestyle,1/20/2019,13:45,7.7
+556,Mandalay,Fashion accessories,02/04/2019,19:38,9.5
+557,Naypyitaw,Food and beverages,1/30/2019,20:23,4.5
+558,Yangon,Food and beverages,01/02/2019,15:24,5.6
+559,Yangon,Home and lifestyle,3/29/2019,16:54,8.2
+560,Mandalay,Electronic accessories,3/14/2019,12:32,7.3
+561,Naypyitaw,Food and beverages,02/11/2019,15:42,4.4
+562,Mandalay,Electronic accessories,1/30/2019,13:58,5.7
+563,Yangon,Electronic accessories,3/20/2019,15:08,5.0
+564,Mandalay,Fashion accessories,3/20/2019,13:02,9.0
+565,Yangon,Food and beverages,1/17/2019,13:01,6.3
+566,Naypyitaw,Sports and travel,02/03/2019,16:40,9.4
+567,Yangon,Fashion accessories,01/01/2019,13:55,7.7
+568,Mandalay,Fashion accessories,01/10/2019,10:33,5.5
+569,Naypyitaw,Sports and travel,03/02/2019,16:42,4.1
+570,Mandalay,Home and lifestyle,2/25/2019,17:16,7.6
+571,Mandalay,Sports and travel,1/29/2019,11:48,8.6
+572,Yangon,Food and beverages,03/10/2019,19:35,8.3
+573,Mandalay,Food and beverages,1/13/2019,19:55,8.1
+574,Yangon,Sports and travel,3/22/2019,14:33,8.6
+575,Mandalay,Fashion accessories,03/01/2019,19:49,6.3
+576,Mandalay,Food and beverages,2/20/2019,18:43,5.8
+577,Naypyitaw,Food and beverages,1/14/2019,14:43,6.2
+578,Yangon,Health and beauty,3/26/2019,13:54,7.7
+579,Mandalay,Health and beauty,03/01/2019,12:15,8.1
+580,Naypyitaw,Food and beverages,01/07/2019,12:37,7.3
+581,Yangon,Health and beauty,02/01/2019,19:54,8.4
+582,Naypyitaw,Fashion accessories,2/13/2019,15:06,8.0
+583,Mandalay,Fashion accessories,1/14/2019,18:03,9.5
+584,Mandalay,Sports and travel,1/19/2019,15:58,7.0
+585,Yangon,Health and beauty,03/09/2019,13:53,9.8
+586,Yangon,Food and beverages,3/27/2019,14:03,9.2
+587,Yangon,Sports and travel,02/04/2019,16:38,7.7
+588,Naypyitaw,Fashion accessories,3/14/2019,11:07,5.3
+589,Yangon,Health and beauty,03/04/2019,12:23,4.4
+590,Naypyitaw,Health and beauty,03/03/2019,10:54,4.3
+591,Naypyitaw,Home and lifestyle,1/27/2019,17:38,9.4
+592,Yangon,Sports and travel,02/07/2019,14:13,9.8
+593,Yangon,Sports and travel,02/05/2019,11:51,4.8
+594,Mandalay,Sports and travel,3/15/2019,13:05,5.3
+595,Mandalay,Health and beauty,03/01/2019,11:30,8.7
+596,Yangon,Food and beverages,2/15/2019,13:30,9.5
+597,Naypyitaw,Sports and travel,2/17/2019,19:11,5.3
+598,Naypyitaw,Fashion accessories,1/26/2019,18:53,9.2
+599,Yangon,Home and lifestyle,3/24/2019,14:22,9.6
+600,Naypyitaw,Electronic accessories,1/23/2019,17:16,6.4
+601,Naypyitaw,Fashion accessories,1/26/2019,10:06,4.5
+602,Naypyitaw,Food and beverages,3/14/2019,20:35,6.9
+603,Mandalay,Sports and travel,3/17/2019,13:54,7.8
+604,Naypyitaw,Fashion accessories,01/08/2019,20:08,4.5
+605,Mandalay,Home and lifestyle,02/08/2019,15:26,8.6
+606,Yangon,Fashion accessories,02/10/2019,12:56,5.2
+607,Naypyitaw,Food and beverages,3/28/2019,19:16,6.4
+608,Yangon,Fashion accessories,1/23/2019,12:20,5.2
+609,Mandalay,Food and beverages,1/17/2019,10:37,8.9
+610,Yangon,Electronic accessories,02/07/2019,10:18,6.2
+611,Naypyitaw,Food and beverages,03/09/2019,11:23,6.7
+612,Mandalay,Fashion accessories,1/24/2019,11:45,7.2
+613,Naypyitaw,Sports and travel,1/19/2019,16:08,9.0
+614,Yangon,Food and beverages,02/03/2019,11:25,4.2
+615,Yangon,Sports and travel,3/20/2019,12:24,4.2
+616,Mandalay,Sports and travel,1/13/2019,19:51,6.9
+617,Naypyitaw,Electronic accessories,3/14/2019,18:10,4.4
+618,Yangon,Food and beverages,1/23/2019,11:22,4.0
+619,Naypyitaw,Fashion accessories,02/07/2019,17:55,8.5
+620,Yangon,Food and beverages,3/28/2019,15:30,9.2
+621,Yangon,Food and beverages,3/20/2019,19:44,9.8
+622,Mandalay,Home and lifestyle,1/17/2019,15:27,4.9
+623,Mandalay,Fashion accessories,01/12/2019,11:25,4.4
+624,Mandalay,Fashion accessories,2/16/2019,15:42,6.8
+625,Mandalay,Food and beverages,1/26/2019,16:04,9.1
+626,Yangon,Sports and travel,03/09/2019,12:37,8.7
+627,Mandalay,Health and beauty,3/14/2019,14:41,5.0
+628,Yangon,Home and lifestyle,1/25/2019,14:19,7.5
+629,Yangon,Fashion accessories,1/26/2019,18:19,8.2
+630,Yangon,Sports and travel,1/19/2019,14:08,6.7
+631,Yangon,Electronic accessories,03/05/2019,16:38,5.4
+632,Yangon,Food and beverages,1/15/2019,10:54,7.0
+633,Mandalay,Home and lifestyle,3/18/2019,11:29,4.7
+634,Mandalay,Food and beverages,3/20/2019,19:28,5.0
+635,Mandalay,Health and beauty,1/15/2019,15:01,5.0
+636,Yangon,Health and beauty,03/03/2019,20:31,6.0
+637,Naypyitaw,Electronic accessories,3/19/2019,12:16,6.3
+638,Mandalay,Food and beverages,03/08/2019,15:27,8.5
+639,Mandalay,Fashion accessories,2/27/2019,17:36,7.5
+640,Mandalay,Food and beverages,2/23/2019,20:00,6.4
+641,Naypyitaw,Electronic accessories,3/19/2019,15:29,4.7
+642,Mandalay,Electronic accessories,3/27/2019,15:08,6.0
+643,Naypyitaw,Food and beverages,3/30/2019,19:26,4.0
+644,Naypyitaw,Electronic accessories,2/16/2019,15:53,5.5
+645,Yangon,Home and lifestyle,1/18/2019,18:43,8.7
+646,Naypyitaw,Health and beauty,3/30/2019,14:58,7.4
+647,Mandalay,Fashion accessories,3/20/2019,19:55,5.6
+648,Naypyitaw,Sports and travel,1/16/2019,15:10,6.3
+649,Naypyitaw,Electronic accessories,2/24/2019,16:44,7.1
+650,Mandalay,Electronic accessories,1/15/2019,18:22,7.8
+651,Mandalay,Health and beauty,1/22/2019,11:52,9.9
+652,Yangon,Home and lifestyle,02/03/2019,17:24,7.3
+653,Mandalay,Sports and travel,03/06/2019,15:31,5.1
+654,Mandalay,Fashion accessories,2/16/2019,18:04,9.4
+655,Yangon,Electronic accessories,3/14/2019,14:13,5.8
+656,Naypyitaw,Electronic accessories,2/27/2019,10:23,8.0
+657,Yangon,Fashion accessories,1/18/2019,10:11,7.9
+658,Yangon,Sports and travel,1/29/2019,15:48,5.9
+659,Yangon,Fashion accessories,2/26/2019,17:46,4.9
+660,Mandalay,Sports and travel,02/03/2019,11:46,9.3
+661,Naypyitaw,Sports and travel,1/16/2019,12:07,7.9
+662,Mandalay,Fashion accessories,3/24/2019,18:14,5.9
+663,Naypyitaw,Food and beverages,02/12/2019,14:45,9.9
+664,Naypyitaw,Sports and travel,2/21/2019,11:39,7.7
+665,Yangon,Fashion accessories,02/04/2019,15:44,7.6
+666,Mandalay,Food and beverages,2/20/2019,13:06,7.7
+667,Mandalay,Health and beauty,2/23/2019,20:43,6.4
+668,Naypyitaw,Health and beauty,2/16/2019,14:19,4.4
+669,Mandalay,Sports and travel,1/17/2019,10:01,4.1
+670,Yangon,Fashion accessories,1/14/2019,19:30,4.4
+671,Mandalay,Food and beverages,3/30/2019,16:34,5.5
+672,Mandalay,Health and beauty,03/02/2019,13:10,4.0
+673,Naypyitaw,Health and beauty,2/15/2019,17:10,9.3
+674,Yangon,Electronic accessories,03/01/2019,10:22,4.8
+675,Mandalay,Fashion accessories,2/24/2019,19:57,4.6
+676,Mandalay,Sports and travel,2/19/2019,19:29,7.3
+677,Yangon,Food and beverages,2/23/2019,18:30,6.0
+678,Naypyitaw,Health and beauty,02/07/2019,14:27,8.1
+679,Yangon,Food and beverages,01/11/2019,13:57,9.4
+680,Mandalay,Electronic accessories,02/12/2019,19:43,6.5
+681,Mandalay,Sports and travel,1/14/2019,10:11,7.0
+682,Naypyitaw,Fashion accessories,01/09/2019,13:46,7.1
+683,Yangon,Fashion accessories,2/27/2019,12:22,6.6
+684,Mandalay,Sports and travel,1/24/2019,19:20,4.9
+685,Mandalay,Home and lifestyle,01/08/2019,12:58,6.4
+686,Mandalay,Sports and travel,01/08/2019,11:59,8.0
+687,Yangon,Home and lifestyle,1/16/2019,17:59,4.3
+688,Naypyitaw,Sports and travel,3/13/2019,12:51,6.1
+689,Yangon,Food and beverages,2/15/2019,10:36,7.5
+690,Naypyitaw,Sports and travel,1/25/2019,13:38,6.7
+691,Naypyitaw,Food and beverages,03/12/2019,19:39,5.2
+692,Yangon,Health and beauty,03/04/2019,12:44,8.8
+693,Naypyitaw,Fashion accessories,02/10/2019,13:56,9.5
+694,Naypyitaw,Food and beverages,1/16/2019,14:42,7.6
+695,Yangon,Home and lifestyle,1/29/2019,19:45,6.6
+696,Yangon,Sports and travel,01/01/2019,20:26,6.9
+697,Mandalay,Home and lifestyle,01/06/2019,19:46,4.3
+698,Yangon,Electronic accessories,2/19/2019,19:38,7.8
+699,Naypyitaw,Home and lifestyle,01/12/2019,16:18,8.0
+700,Naypyitaw,Fashion accessories,02/07/2019,12:23,9.6
+701,Mandalay,Food and beverages,3/27/2019,19:11,4.3
+702,Mandalay,Fashion accessories,2/27/2019,18:57,5.0
+703,Mandalay,Health and beauty,01/06/2019,11:18,9.2
+704,Mandalay,Home and lifestyle,03/02/2019,12:40,6.3
+705,Mandalay,Health and beauty,3/29/2019,14:06,8.9
+706,Mandalay,Electronic accessories,1/31/2019,20:48,7.6
+707,Naypyitaw,Food and beverages,1/21/2019,20:13,4.8
+708,Naypyitaw,Fashion accessories,1/20/2019,20:37,9.1
+709,Yangon,Sports and travel,1/17/2019,17:59,6.1
+710,Yangon,Food and beverages,2/28/2019,20:18,9.1
+711,Naypyitaw,Home and lifestyle,3/19/2019,15:52,8.3
+712,Naypyitaw,Electronic accessories,2/19/2019,15:14,7.2
+713,Naypyitaw,Health and beauty,02/04/2019,12:50,6.0
+714,Naypyitaw,Fashion accessories,1/31/2019,10:36,8.5
+715,Yangon,Health and beauty,02/06/2019,18:33,6.6
+716,Yangon,Fashion accessories,3/28/2019,16:06,4.5
+717,Yangon,Electronic accessories,1/19/2019,12:47,8.1
+718,Yangon,Fashion accessories,2/17/2019,13:34,7.2
+719,Mandalay,Fashion accessories,1/18/2019,15:04,6.1
+720,Mandalay,Fashion accessories,02/02/2019,20:42,7.1
+721,Naypyitaw,Sports and travel,1/18/2019,15:28,5.1
+722,Mandalay,Home and lifestyle,3/18/2019,13:45,7.9
+723,Naypyitaw,Food and beverages,01/11/2019,20:10,7.4
+724,Mandalay,Food and beverages,02/04/2019,18:53,7.4
+725,Naypyitaw,Health and beauty,02/06/2019,14:24,6.6
+726,Naypyitaw,Home and lifestyle,01/08/2019,11:42,5.9
+727,Mandalay,Sports and travel,03/05/2019,17:49,8.9
+728,Naypyitaw,Fashion accessories,3/16/2019,15:33,6.8
+729,Mandalay,Home and lifestyle,03/09/2019,10:54,9.3
+730,Yangon,Fashion accessories,03/01/2019,16:23,4.4
+731,Yangon,Health and beauty,2/28/2019,19:33,4.8
+732,Yangon,Fashion accessories,02/08/2019,11:39,9.5
+733,Mandalay,Electronic accessories,1/24/2019,10:38,8.9
+734,Mandalay,Food and beverages,03/01/2019,20:03,6.4
+735,Naypyitaw,Health and beauty,03/10/2019,12:39,6.0
+736,Naypyitaw,Home and lifestyle,3/23/2019,15:59,8.1
+737,Naypyitaw,Electronic accessories,1/29/2019,14:26,9.0
+738,Mandalay,Electronic accessories,01/12/2019,18:22,6.0
+739,Yangon,Home and lifestyle,3/20/2019,11:32,9.8
+740,Naypyitaw,Home and lifestyle,3/23/2019,12:41,8.5
+741,Naypyitaw,Food and beverages,1/14/2019,15:20,8.8
+742,Yangon,Sports and travel,02/12/2019,14:33,8.8
+743,Yangon,Home and lifestyle,2/20/2019,15:29,9.5
+744,Naypyitaw,Sports and travel,01/02/2019,16:19,5.6
+745,Naypyitaw,Food and beverages,02/02/2019,16:33,8.6
+746,Mandalay,Fashion accessories,01/08/2019,19:07,5.2
+747,Naypyitaw,Home and lifestyle,1/30/2019,14:43,5.8
+748,Mandalay,Home and lifestyle,3/26/2019,19:28,8.0
+749,Naypyitaw,Health and beauty,1/15/2019,20:44,9.0
+750,Mandalay,Fashion accessories,3/14/2019,11:16,4.1
+751,Yangon,Food and beverages,02/03/2019,10:31,8.6
+752,Yangon,Electronic accessories,2/22/2019,12:30,7.0
+753,Mandalay,Home and lifestyle,1/24/2019,15:05,8.4
+754,Naypyitaw,Fashion accessories,1/25/2019,18:30,7.4
+755,Yangon,Fashion accessories,03/09/2019,13:18,6.2
+756,Mandalay,Electronic accessories,2/17/2019,15:28,4.9
+757,Yangon,Home and lifestyle,01/11/2019,11:52,4.5
+758,Yangon,Food and beverages,2/27/2019,18:24,5.6
+759,Yangon,Food and beverages,3/25/2019,15:19,8.0
+760,Mandalay,Food and beverages,02/11/2019,10:38,5.6
+761,Mandalay,Electronic accessories,1/31/2019,15:12,4.2
+762,Yangon,Fashion accessories,1/20/2019,17:48,9.9
+763,Yangon,Health and beauty,3/26/2019,11:07,7.6
+764,Yangon,Health and beauty,1/20/2019,15:48,6.6
+765,Mandalay,Home and lifestyle,03/05/2019,19:40,4.7
+766,Naypyitaw,Fashion accessories,01/05/2019,20:30,9.8
+767,Mandalay,Sports and travel,2/13/2019,13:59,6.3
+768,Mandalay,Electronic accessories,3/16/2019,18:51,7.9
+769,Yangon,Home and lifestyle,1/15/2019,17:24,7.7
+770,Mandalay,Sports and travel,2/26/2019,11:58,4.5
+771,Naypyitaw,Health and beauty,2/27/2019,19:01,8.0
+772,Naypyitaw,Sports and travel,2/17/2019,16:50,5.7
+773,Naypyitaw,Food and beverages,02/06/2019,10:22,6.3
+774,Naypyitaw,Food and beverages,1/17/2019,16:46,6.0
+775,Mandalay,Food and beverages,1/22/2019,18:08,8.0
+776,Naypyitaw,Health and beauty,03/05/2019,18:02,4.2
+777,Mandalay,Sports and travel,01/03/2019,13:07,9.6
+778,Naypyitaw,Sports and travel,3/20/2019,17:52,6.1
+779,Mandalay,Electronic accessories,1/31/2019,20:32,5.6
+780,Naypyitaw,Health and beauty,2/19/2019,19:24,8.3
+781,Yangon,Sports and travel,02/11/2019,16:06,7.8
+782,Yangon,Fashion accessories,02/05/2019,14:14,4.1
+783,Naypyitaw,Home and lifestyle,03/03/2019,17:36,8.8
+784,Naypyitaw,Health and beauty,2/24/2019,13:08,4.1
+785,Yangon,Electronic accessories,02/04/2019,16:09,9.0
+786,Naypyitaw,Electronic accessories,2/19/2019,11:33,5.5
+787,Naypyitaw,Health and beauty,1/23/2019,10:18,9.3
+788,Naypyitaw,Health and beauty,1/14/2019,10:55,5.6
+789,Yangon,Sports and travel,1/17/2019,15:15,9.7
+790,Yangon,Fashion accessories,03/03/2019,20:06,4.0
+791,Naypyitaw,Health and beauty,2/15/2019,20:21,9.2
+792,Mandalay,Home and lifestyle,1/15/2019,13:48,4.9
+793,Yangon,Electronic accessories,2/27/2019,12:52,9.3
+794,Yangon,Electronic accessories,2/26/2019,12:28,6.6
+795,Mandalay,Fashion accessories,3/15/2019,16:26,4.3
+796,Naypyitaw,Home and lifestyle,1/24/2019,13:24,5.5
+797,Yangon,Sports and travel,2/22/2019,15:15,8.1
+798,Mandalay,Health and beauty,3/15/2019,10:50,9.8
+799,Naypyitaw,Home and lifestyle,02/11/2019,18:38,9.4
+800,Mandalay,Sports and travel,01/12/2019,16:45,7.9
+801,Naypyitaw,Electronic accessories,03/03/2019,19:30,5.1
+802,Naypyitaw,Fashion accessories,3/23/2019,13:23,6.9
+803,Yangon,Fashion accessories,03/04/2019,11:27,8.0
+804,Mandalay,Electronic accessories,2/23/2019,11:12,8.0
+805,Yangon,Home and lifestyle,3/17/2019,16:36,4.2
+806,Yangon,Sports and travel,1/16/2019,18:41,8.5
+807,Yangon,Electronic accessories,01/08/2019,17:12,9.0
+808,Mandalay,Health and beauty,1/14/2019,10:38,8.6
+809,Naypyitaw,Fashion accessories,1/31/2019,10:33,6.0
+810,Mandalay,Health and beauty,3/15/2019,14:38,6.2
+811,Yangon,Electronic accessories,2/24/2019,18:06,5.0
+812,Naypyitaw,Sports and travel,02/08/2019,12:52,6.5
+813,Yangon,Electronic accessories,3/22/2019,14:00,6.0
+814,Yangon,Electronic accessories,1/24/2019,10:57,5.0
+815,Mandalay,Food and beverages,3/14/2019,16:45,5.0
+816,Naypyitaw,Fashion accessories,1/23/2019,11:15,9.2
+817,Yangon,Food and beverages,1/19/2019,20:29,9.6
+818,Mandalay,Health and beauty,1/27/2019,20:03,8.4
+819,Mandalay,Food and beverages,02/03/2019,14:35,6.0
+820,Mandalay,Electronic accessories,3/25/2019,16:32,6.7
+821,Yangon,Home and lifestyle,2/24/2019,10:10,4.1
+822,Naypyitaw,Sports and travel,02/07/2019,14:15,5.9
+823,Yangon,Health and beauty,03/04/2019,10:05,8.7
+824,Mandalay,Sports and travel,2/14/2019,11:36,4.5
+825,Yangon,Sports and travel,1/29/2019,18:15,6.6
+826,Mandalay,Health and beauty,1/28/2019,13:53,7.7
+827,Yangon,Fashion accessories,3/26/2019,18:37,8.5
+828,Naypyitaw,Electronic accessories,3/24/2019,18:27,5.2
+829,Yangon,Electronic accessories,01/01/2019,14:42,4.3
+830,Yangon,Electronic accessories,1/24/2019,17:43,7.6
+831,Mandalay,Health and beauty,2/25/2019,18:37,9.5
+832,Mandalay,Sports and travel,01/09/2019,16:34,4.1
+833,Yangon,Health and beauty,2/14/2019,14:42,9.2
+834,Mandalay,Home and lifestyle,03/12/2019,11:01,5.4
+835,Yangon,Fashion accessories,3/26/2019,19:44,5.8
+836,Yangon,Fashion accessories,01/09/2019,13:34,5.6
+837,Mandalay,Sports and travel,01/02/2019,20:08,5.1
+838,Naypyitaw,Electronic accessories,1/15/2019,15:01,5.8
+839,Naypyitaw,Sports and travel,01/01/2019,11:40,5.0
+840,Yangon,Fashion accessories,2/15/2019,15:21,7.9
+841,Mandalay,Electronic accessories,2/28/2019,17:38,6.0
+842,Yangon,Sports and travel,03/02/2019,16:16,5.0
+843,Naypyitaw,Food and beverages,2/13/2019,18:15,8.9
+844,Yangon,Fashion accessories,1/26/2019,12:43,5.9
+845,Yangon,Electronic accessories,1/30/2019,11:32,5.9
+846,Yangon,Electronic accessories,1/27/2019,18:08,9.7
+847,Naypyitaw,Sports and travel,1/30/2019,17:08,8.6
+848,Naypyitaw,Food and beverages,01/08/2019,19:38,4.0
+849,Yangon,Fashion accessories,1/19/2019,13:11,4.2
+850,Yangon,Fashion accessories,1/25/2019,11:05,9.2
+851,Yangon,Fashion accessories,2/19/2019,10:12,9.2
+852,Naypyitaw,Health and beauty,1/14/2019,15:42,5.0
+853,Mandalay,Electronic accessories,2/25/2019,11:58,10.0
+854,Yangon,Health and beauty,1/23/2019,14:21,8.8
+855,Mandalay,Fashion accessories,2/16/2019,10:52,4.2
+856,Mandalay,Food and beverages,01/01/2019,19:31,6.3
+857,Yangon,Home and lifestyle,03/07/2019,18:35,8.2
+858,Mandalay,Health and beauty,2/15/2019,13:51,5.1
+859,Yangon,Food and beverages,1/23/2019,12:35,5.0
+860,Naypyitaw,Home and lifestyle,2/20/2019,13:24,7.0
+861,Yangon,Sports and travel,01/08/2019,18:06,7.8
+862,Mandalay,Home and lifestyle,3/17/2019,11:55,4.3
+863,Mandalay,Home and lifestyle,01/12/2019,11:42,7.0
+864,Yangon,Electronic accessories,01/08/2019,14:30,6.6
+865,Naypyitaw,Health and beauty,1/26/2019,15:11,7.3
+866,Mandalay,Sports and travel,3/15/2019,14:48,6.5
+867,Naypyitaw,Health and beauty,1/17/2019,12:36,4.9
+868,Naypyitaw,Food and beverages,01/08/2019,19:09,4.3
+869,Yangon,Sports and travel,01/06/2019,13:35,9.3
+870,Yangon,Food and beverages,2/16/2019,10:33,7.1
+871,Naypyitaw,Fashion accessories,3/13/2019,15:45,9.6
+872,Mandalay,Electronic accessories,1/28/2019,11:51,6.2
+873,Yangon,Sports and travel,1/18/2019,17:26,9.9
+874,Yangon,Home and lifestyle,3/19/2019,11:52,5.9
+875,Naypyitaw,Home and lifestyle,3/15/2019,14:04,6.3
+876,Naypyitaw,Fashion accessories,02/12/2019,17:49,4.0
+877,Mandalay,Electronic accessories,2/25/2019,20:19,6.1
+878,Yangon,Electronic accessories,3/21/2019,16:08,4.5
+879,Mandalay,Electronic accessories,1/19/2019,10:17,8.6
+880,Mandalay,Food and beverages,01/08/2019,14:25,6.0
+881,Naypyitaw,Fashion accessories,3/30/2019,12:51,9.5
+882,Mandalay,Sports and travel,2/20/2019,15:18,9.9
+883,Yangon,Home and lifestyle,3/30/2019,12:45,7.5
+884,Yangon,Food and beverages,3/19/2019,13:37,7.6
+885,Yangon,Sports and travel,1/13/2019,10:03,5.0
+886,Yangon,Food and beverages,02/05/2019,19:42,6.7
+887,Yangon,Electronic accessories,3/23/2019,13:14,9.5
+888,Naypyitaw,Fashion accessories,3/13/2019,12:47,6.8
+889,Yangon,Sports and travel,3/17/2019,19:53,5.6
+890,Naypyitaw,Health and beauty,2/21/2019,10:26,7.2
+891,Mandalay,Electronic accessories,02/07/2019,15:06,8.1
+892,Naypyitaw,Fashion accessories,03/02/2019,16:35,8.6
+893,Mandalay,Electronic accessories,03/06/2019,20:57,9.4
+894,Mandalay,Electronic accessories,02/06/2019,15:16,8.9
+895,Mandalay,Health and beauty,1/28/2019,17:47,4.2
+896,Naypyitaw,Fashion accessories,1/18/2019,16:23,5.0
+897,Naypyitaw,Food and beverages,02/05/2019,10:17,8.8
+898,Naypyitaw,Health and beauty,03/02/2019,13:50,5.3
+899,Yangon,Food and beverages,02/09/2019,19:17,4.6
+900,Naypyitaw,Electronic accessories,1/14/2019,14:00,7.5
+901,Mandalay,Home and lifestyle,02/09/2019,12:02,5.1
+902,Yangon,Health and beauty,3/26/2019,20:21,4.2
+903,Yangon,Food and beverages,1/28/2019,17:35,8.1
+904,Naypyitaw,Health and beauty,2/14/2019,12:42,6.0
+905,Naypyitaw,Home and lifestyle,3/24/2019,17:56,7.9
+906,Naypyitaw,Health and beauty,02/09/2019,18:58,8.8
+907,Mandalay,Health and beauty,3/24/2019,14:08,6.6
+908,Yangon,Food and beverages,3/27/2019,16:30,6.2
+909,Mandalay,Home and lifestyle,1/27/2019,10:44,4.2
+910,Mandalay,Food and beverages,3/27/2019,20:29,7.3
+911,Naypyitaw,Electronic accessories,1/19/2019,11:43,8.6
+912,Yangon,Home and lifestyle,02/07/2019,10:09,6.8
+913,Yangon,Fashion accessories,1/31/2019,10:00,7.6
+914,Yangon,Food and beverages,2/25/2019,18:45,5.8
+915,Naypyitaw,Electronic accessories,02/02/2019,12:40,4.1
+916,Naypyitaw,Sports and travel,3/14/2019,15:36,9.3
+917,Yangon,Fashion accessories,03/11/2019,12:04,6.8
+918,Mandalay,Home and lifestyle,2/22/2019,11:26,8.7
+919,Mandalay,Electronic accessories,03/02/2019,12:36,6.3
+920,Naypyitaw,Home and lifestyle,03/10/2019,15:06,5.1
+921,Mandalay,Home and lifestyle,02/08/2019,10:58,7.0
+922,Naypyitaw,Home and lifestyle,2/22/2019,12:10,5.2
+923,Naypyitaw,Sports and travel,01/10/2019,10:31,6.6
+924,Naypyitaw,Sports and travel,3/14/2019,13:49,6.5
+925,Mandalay,Electronic accessories,01/10/2019,11:10,9.0
+926,Mandalay,Sports and travel,2/15/2019,17:38,5.2
+927,Yangon,Health and beauty,1/13/2019,17:54,6.8
+928,Mandalay,Electronic accessories,2/15/2019,20:51,7.6
+929,Mandalay,Sports and travel,03/02/2019,19:26,7.2
+930,Mandalay,Home and lifestyle,3/24/2019,13:33,7.1
+931,Naypyitaw,Fashion accessories,02/02/2019,14:05,9.5
+932,Yangon,Food and beverages,2/27/2019,11:40,5.1
+933,Naypyitaw,Health and beauty,1/20/2019,12:27,7.6
+934,Mandalay,Home and lifestyle,01/03/2019,20:24,9.8
+935,Naypyitaw,Home and lifestyle,1/24/2019,20:59,5.1
+936,Naypyitaw,Health and beauty,01/05/2019,19:48,7.5
+937,Yangon,Sports and travel,3/30/2019,10:18,7.4
+938,Yangon,Health and beauty,2/17/2019,16:27,4.2
+939,Naypyitaw,Food and beverages,3/21/2019,17:04,5.9
+940,Yangon,Food and beverages,03/02/2019,18:14,6.9
+941,Naypyitaw,Fashion accessories,3/27/2019,10:43,6.6
+942,Yangon,Home and lifestyle,1/19/2019,19:30,5.7
+943,Yangon,Health and beauty,2/19/2019,14:53,5.3
+944,Yangon,Health and beauty,3/28/2019,20:14,4.2
+945,Yangon,Electronic accessories,01/05/2019,11:51,7.3
+946,Naypyitaw,Electronic accessories,3/26/2019,14:13,5.3
+947,Mandalay,Fashion accessories,02/03/2019,20:13,4.7
+948,Naypyitaw,Home and lifestyle,02/06/2019,18:44,7.9
+949,Mandalay,Food and beverages,2/24/2019,14:26,8.9
+950,Mandalay,Health and beauty,2/21/2019,12:40,9.3
+951,Mandalay,Home and lifestyle,01/09/2019,18:43,4.7
+952,Mandalay,Food and beverages,2/25/2019,13:22,8.7
+953,Naypyitaw,Food and beverages,1/13/2019,13:58,7.6
+954,Mandalay,Home and lifestyle,02/09/2019,11:45,5.7
+955,Yangon,Fashion accessories,01/06/2019,11:51,6.8
+956,Naypyitaw,Food and beverages,01/10/2019,17:16,5.4
+957,Mandalay,Electronic accessories,02/07/2019,15:55,7.1
+958,Naypyitaw,Home and lifestyle,01/09/2019,12:07,7.8
+959,Yangon,Food and beverages,2/19/2019,15:07,8.4
+960,Naypyitaw,Fashion accessories,3/18/2019,15:29,9.8
+961,Yangon,Electronic accessories,02/05/2019,18:45,9.8
+962,Yangon,Fashion accessories,3/19/2019,15:23,7.4
+963,Naypyitaw,Electronic accessories,3/30/2019,20:37,6.7
+964,Mandalay,Food and beverages,1/26/2019,14:41,6.4
+965,Mandalay,Electronic accessories,03/02/2019,18:18,5.8
+966,Yangon,Home and lifestyle,03/04/2019,15:27,7.2
+967,Yangon,Home and lifestyle,1/13/2019,12:55,9.3
+968,Yangon,Health and beauty,3/25/2019,18:02,9.5
+969,Mandalay,Electronic accessories,03/11/2019,19:44,9.0
+970,Mandalay,Food and beverages,01/01/2019,11:36,9.0
+971,Mandalay,Home and lifestyle,02/10/2019,13:51,6.7
+972,Mandalay,Electronic accessories,1/26/2019,15:17,5.5
+973,Yangon,Home and lifestyle,02/11/2019,15:29,5.4
+974,Naypyitaw,Fashion accessories,02/07/2019,17:59,8.2
+975,Mandalay,Fashion accessories,03/06/2019,11:55,7.0
+976,Yangon,Food and beverages,03/04/2019,10:39,8.5
+977,Mandalay,Food and beverages,2/26/2019,15:10,4.9
+978,Mandalay,Electronic accessories,03/10/2019,18:10,5.1
+979,Mandalay,Food and beverages,02/04/2019,20:43,6.5
+980,Naypyitaw,Food and beverages,1/19/2019,12:46,9.8
+981,Yangon,Health and beauty,1/23/2019,17:44,8.4
+982,Yangon,Sports and travel,3/14/2019,14:19,7.4
+983,Naypyitaw,Health and beauty,1/23/2019,10:33,6.1
+984,Naypyitaw,Electronic accessories,01/09/2019,11:40,6.0
+985,Mandalay,Fashion accessories,02/07/2019,19:30,8.5
+986,Mandalay,Health and beauty,2/18/2019,14:42,4.3
+987,Mandalay,Health and beauty,01/03/2019,19:08,6.2
+988,Naypyitaw,Electronic accessories,3/29/2019,19:12,4.3
+989,Mandalay,Health and beauty,1/28/2019,15:46,8.4
+990,Yangon,Food and beverages,3/22/2019,19:06,4.5
+991,Mandalay,Sports and travel,1/24/2019,18:10,6.0
+992,Yangon,Electronic accessories,03/10/2019,20:46,8.8
+993,Mandalay,Fashion accessories,2/22/2019,18:35,6.6
+994,Naypyitaw,Electronic accessories,2/18/2019,11:40,5.9
+995,Naypyitaw,Health and beauty,1/29/2019,13:46,6.2
+996,Mandalay,Home and lifestyle,03/02/2019,17:16,4.4
+997,Yangon,Food and beverages,02/09/2019,13:22,7.7
+998,Yangon,Home and lifestyle,2/22/2019,15:33,4.1
+999,Yangon,Fashion accessories,2/18/2019,13:28,6.6
