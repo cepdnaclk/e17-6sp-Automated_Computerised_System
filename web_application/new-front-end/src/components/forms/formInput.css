@@ -1,0 +1,12 @@
+.formInput {
+    height: 5vh;
+    width: 20vw;
+    border-radius: 0.4rem;
+    background-color: rgba(212, 212, 212, 0.966);
+    border: none;
+    margin: 10px;
+    text-align: center;
+    color: #0f003c;
+    font-weight: 600
+  }
+  

@@ -1,8 +1,5 @@
-import Distribute from "../components/distribution_manager/Distribute";
-import Unloaded from "../components/distribution_manager/Unloaded";
-import Pending from "../components/distribution_manager/Pending";
-import Errored from "../components/distribution_manager/Errored";
-
+import Pending from "../components/sales_agent/Pending";
+import Deliver from "../components/sales_agent/Deliver";
 //import useState hook to create menu collapse state
 import React, { useState } from "react";
 
@@ -32,7 +29,7 @@ import { BiCog } from "react-icons/bi";
 import "react-pro-sidebar/dist/css/styles.css";
 import "../styles/sideBar.css";
 
-const DmPage = () => {
+const SaPage = () => {
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
 
@@ -43,52 +40,31 @@ const DmPage = () => {
   };
 
   /********************************************************************************************************/
-  const [renderedItem, setRenderedItem] = useState(<Unloaded/>);
+  const [renderedItem, setRenderedItem] = useState(<Pending/>);
   const [menuItem1, setMenuItem1] = useState(true);
   const [menuItem2, setMenuItem2] = useState(false);
   const [menuItem3, setMenuItem3] = useState(false);
-  const [menuItem4, setMenuItem4] = useState(false);
-  const [menuItem5, setMenuItem5] = useState(false);
 
-  const onClickUnload = () => {
+  const onClickPending = () => {
     setMenuItem1(true);
     setMenuItem2(false);
     setMenuItem3(false);
-    setMenuItem4(false);
-    setMenuItem5(false);
-    setRenderedItem(<Unloaded/>);
+    setRenderedItem(<Pending/>);
   }
-  const onClickDistribute = () => {
+
+  const onClickDeliver = () => {
     setMenuItem1(false);
     setMenuItem2(true);
     setMenuItem3(false);
-    setMenuItem4(false);
-    setMenuItem5(false);
-    setRenderedItem(<Distribute/>);
+    setRenderedItem(<Deliver/>);
   }
-  const onClickPending = () => {
-    setMenuItem1(false);
-    setMenuItem2(false);
-    setMenuItem3(true);
-    setMenuItem4(false);
-    setMenuItem5(false);
-    setRenderedItem(<Pending/>);
-  }
-  const onClickUnsuccessful = () => {
-    setMenuItem1(false);
-    setMenuItem2(false);
-    setMenuItem3(false);
-    setMenuItem4(true);
-    setMenuItem5(false);
-    setRenderedItem(<Errored/>);
-  }
+
   const onClickLogout = () => {
     setMenuItem1(false);
     setMenuItem2(false);
-    setMenuItem3(false);
-    setMenuItem4(false);
-    setMenuItem5(true);
+    setMenuItem3(true);
   }
+
   return (
     <React.Fragment>
       <div id="header">
@@ -106,17 +82,15 @@ const DmPage = () => {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem active={menuItem1} icon={<FiHome />} onClick={onClickUnload}>
-                Unload
+              <MenuItem active={menuItem1} icon={<FiHome />} onClick={onClickPending}>
+                Pending
               </MenuItem>
-              <MenuItem active={menuItem2} icon={<FaList />} onClick={onClickDistribute}>Distribute</MenuItem>
-              <MenuItem active={menuItem3} icon={<FaRegHeart />} onClick={onClickPending}>Pending</MenuItem>
-              <MenuItem active={menuItem4} icon={<RiPencilLine />} onClick={onClickUnsuccessful}>Unsuccessful</MenuItem>
+              <MenuItem active={menuItem2} icon={<FaList />} onClick={onClickDeliver}>Deliver</MenuItem>
             </Menu>
           </SidebarContent>
           <SidebarFooter>
             <Menu iconShape="square">
-              <MenuItem active={menuItem5} icon={<FiLogOut />} onClick={onClickLogout}>Logout</MenuItem>
+              <MenuItem active={menuItem3} icon={<FiLogOut />} onClick={onClickLogout}>Logout</MenuItem>
             </Menu>
           </SidebarFooter>
         </ProSidebar>
@@ -128,5 +102,5 @@ const DmPage = () => {
   );
 };
 
-export default DmPage;
+export default SaPage;
 
