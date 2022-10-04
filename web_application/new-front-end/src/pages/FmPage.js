@@ -1,7 +1,7 @@
-import Distribute from "../components/distribution_manager/Distribute";
-import Unloaded from "../components/distribution_manager/Unloaded";
-import Pending from "../components/distribution_manager/Pending";
-import Errored from "../components/distribution_manager/Errored";
+import Production from "../components/factory_manager/Production";
+import Issued from "../components/factory_manager/Issue";
+import Pending from "../components/factory_manager/Pending";
+import Errored from "../components/factory_manager/Errored";
 
 //import useState hook to create menu collapse state
 import React, { useState } from "react";
@@ -32,7 +32,7 @@ import { BiCog } from "react-icons/bi";
 import "react-pro-sidebar/dist/css/styles.css";
 import "../styles/sideBar.css";
 
-const DmPage = () => {
+const FmPage = () => {
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
 
@@ -43,28 +43,28 @@ const DmPage = () => {
   };
 
   /********************************************************************************************************/
-  const [renderedItem, setRenderedItem] = useState(<Unloaded/>);
+  const [renderedItem, setRenderedItem] = useState(<Production/>);
   const [menuItem1, setMenuItem1] = useState(true);
   const [menuItem2, setMenuItem2] = useState(false);
   const [menuItem3, setMenuItem3] = useState(false);
   const [menuItem4, setMenuItem4] = useState(false);
   const [menuItem5, setMenuItem5] = useState(false);
 
-  const onClickUnload = () => {
+  const onClickProduction = () => {
     setMenuItem1(true);
     setMenuItem2(false);
     setMenuItem3(false);
     setMenuItem4(false);
     setMenuItem5(false);
-    setRenderedItem(<Unloaded/>);
+    setRenderedItem(<Production/>);
   }
-  const onClickDistribute = () => {
+  const onClickIssue = () => {
     setMenuItem1(false);
     setMenuItem2(true);
     setMenuItem3(false);
     setMenuItem4(false);
     setMenuItem5(false);
-    setRenderedItem(<Distribute/>);
+    setRenderedItem(<Issued/>);
   }
   const onClickPending = () => {
     setMenuItem1(false);
@@ -89,6 +89,7 @@ const DmPage = () => {
     setMenuItem4(false);
     setMenuItem5(true);
   }
+
   return (
     <React.Fragment>
       <div id="header">
@@ -106,10 +107,10 @@ const DmPage = () => {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem active={menuItem1} icon={<FiHome />} onClick={onClickUnload}>
-                Unload
+              <MenuItem active={menuItem1} icon={<FiHome />} onClick={onClickProduction}>
+                Production
               </MenuItem>
-              <MenuItem active={menuItem2} icon={<FaList />} onClick={onClickDistribute}>Distribute</MenuItem>
+              <MenuItem active={menuItem2} icon={<FaList />} onClick={onClickIssue}>Issue</MenuItem>
               <MenuItem active={menuItem3} icon={<FaRegHeart />} onClick={onClickPending}>Pending</MenuItem>
               <MenuItem active={menuItem4} icon={<RiPencilLine />} onClick={onClickUnsuccessful}>Unsuccessful</MenuItem>
             </Menu>
@@ -128,5 +129,4 @@ const DmPage = () => {
   );
 };
 
-export default DmPage;
-
+export default FmPage;

@@ -4,11 +4,14 @@ body {
 }
   
   .container {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    left: 220px;
+    max-width: 70vw;
+    margin-left: 110px;
+    margin-right: 110px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 1cm;
   }
   
   h2 {
@@ -92,4 +95,8 @@ body {
 
 .table-header{
     margin-bottom: 0 !important;
+}
+
+.responsive-table{
+  padding-left: 0 !important;
 }
