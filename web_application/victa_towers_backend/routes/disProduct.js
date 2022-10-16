@@ -118,6 +118,7 @@ router.put("/receive", auth, async(req, res) => {
     );
     try {
         const [res1] = await connection.promise().execute(getIssuedQuantity);
+        if(res1.length === 0) return res.status(400).send("Order id does not exist");
         const assignedQuantity = res1[0].Quantity;
         if(assignedQuantity == deliveredQuantity){
             const updateDistributionProduct = `UPDATE distributed_product SET DeliveryStatus = 1, DeliveredQuantity = ${deliveredQuantity}

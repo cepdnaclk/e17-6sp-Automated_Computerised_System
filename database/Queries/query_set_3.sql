@@ -5,6 +5,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON victa.product TO 'factory_manager';
 GRANT SELECT ON victa.factory_manager TO 'factory_manager';
 GRANT SELECT, INSERT, UPDATE, DELETE ON victa.factory_product TO 'factory_manager';
 GRANT SELECT ON victa.issued_product TO 'factory_manager';
+GRANT UPDATE (ReceivingStatus) ON victa.issued_product TO 'factory_manager';
 FLUSH PRIVILEGES;
 
 GRANT SELECT, INSERT, UPDATE, DELETE ON victa.issued_product TO 'distribution_manager';

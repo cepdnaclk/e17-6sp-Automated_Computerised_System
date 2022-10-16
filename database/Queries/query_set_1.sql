@@ -129,7 +129,7 @@ ENGINE = InnoDB;
 -- Table `victa`.`distributed_product`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `victa`.`distributed_product` (
-  `DistributionOrderId` INT NOT NULL,
+  `DistributionOrderId` INT NOT NULL AUTO_INCREMENT,
   `BatchNumber` VARCHAR(15) NULL,
   `Quantity` INT NULL,
   `IssuedDMUserName` VARCHAR(20) NOT NULL,
@@ -158,8 +158,18 @@ CREATE TABLE IF NOT EXISTS `victa`.`distributed_product` (
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
-ALTER TABLE `victa`.`distributed_product` 
-CHANGE COLUMN `DistributionOrderId` `DistributionOrderId` INT NOT NULL AUTO_INCREMENT ;
+
+-- -----------------------------------------------------
+-- Table `victa`.`manager`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `victa`.`manager` (
+  `UserName` VARCHAR(20) NOT NULL,
+  `Password` VARCHAR(20) NULL,
+  `Name` VARCHAR(50) NULL,
+  `Contact` VARCHAR(12) NULL,
+  PRIMARY KEY (`UserName`))
+ENGINE = InnoDB;
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

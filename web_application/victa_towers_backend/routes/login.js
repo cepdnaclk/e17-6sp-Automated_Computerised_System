@@ -23,25 +23,20 @@ router.post("/", async (req, res) => {
         case "sa":
           role = "sales_agent";
            break;
+        case "ma":
+          role = "manager";
+            break;
         default:
-          role = "rootAccess"
-    }
-    if(role == "rootAccess"){
-      const token = jwt.sign(
-        {
-          jwtUserName: body.userName,
-          jwtPassWord: body.passWord,
-          jwtRole: "root"
-        },
-        "victa_jwtPrivateKey"
-      );
-      return res.header("x-auth-token", token).status(200).send("Authentication successful");
+          role = ""
     }
 
     let table_name = role;
     const getUserDetails = `SELECT * FROM ${table_name} WHERE username='${body.userName}';`;
     try {
       const [response] = await connection.promise().execute(getUserDetails);
+      if(response.length == 0){
+        return res.status(400).send("Authentication Fail");
+      }
       const token = jwt.sign(
         {
           jwtUserName: body.userName,
@@ -50,7 +45,11 @@ router.post("/", async (req, res) => {
         },
         "victa_jwtPrivateKey"
       );
-      res.header("x-auth-token", token).status(200).send(response);
+      const responseBody = {
+        userDetails: response,
+        token: token,
+      }
+      res.header("x-auth-token", token).status(200).send(responseBody);
     } catch (error) {
       console.log(error);
       res.status(400).send("Database failure");

@@ -7,12 +7,24 @@ const databaseConnection = require("../modules/databaseConnection");
 const router = express.Router();
 
 /*
-A route to get all the issued product
+A route to get the issued product which are pending by the factory manager
 */
 router.get("/", auth, async(req, res) => {
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
-    const getIssuedProducts = `SELECT * FROM issued_product;`; 
+    const getIssuedProducts = `
+    SELECT 
+	    fp.BatchNumber,
+	    fp.ProductDate,
+        fp.FactoryProductName,
+        fp.Quantity
+    FROM factory_product fp
+    LEFT JOIN issued_product ip
+    ON fp.BatchNumber = ip.BatchNumber
+    WHERE 
+	    fp.IsIssued = 1 AND
+	    ip.BatchNumber IS NULL AND
+        fp.IssuedFMUserName = "${fromJwt.jwtUserName}";`; 
     try {
         const [response] = await connection.promise().execute(getIssuedProducts);
         const token = jwt.sign(
@@ -31,12 +43,19 @@ router.get("/", auth, async(req, res) => {
 });
 
 /*
-A route to get errored issued products by the company owner 
+A route to get errored issued products by the factory manager
 */
 router.get("/errored", auth, async(req, res) => {
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
-    const getIssuedProducts = `SELECT * FROM issued_product WHERE ReceivingStatus = 0;`; 
+    const getIssuedProducts = `SELECT 
+        ip.BatchNumber, ip.StoredDate, ip.StoredQuantity, ip.CheckedDMUserName, 
+        fp.Quantity, fp.FactoryProductName, ip.Note
+	    FROM issued_product ip
+        INNER JOIN factory_product fp
+        WHERE ip.BatchNumber = fp.BatchNumber
+        AND ReceivingStatus = 0
+        AND IssuedFMUserName = "${fromJwt.jwtUserName}";`; 
     try {
         const [response] = await connection.promise().execute(getIssuedProducts);
         const token = jwt.sign(
@@ -59,6 +78,7 @@ A route to remove errored issued products by the company owner
 */
 router.put("/errored", auth, async(req, res) => {
     const body = req.body;
+    console.log(body);
     const fromJwt = req.fromUser;
     const connection = await databaseConnection.createConnection(fromJwt.jwtUserName, fromJwt.jwtPassWord);
     const batchNumber = body.batchNumber;
