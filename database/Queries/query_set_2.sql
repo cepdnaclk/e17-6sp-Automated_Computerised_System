@@ -9,6 +9,10 @@ FLUSH PRIVILEGES;
 DROP USER IF EXISTS 'victa_admin_1';
 CREATE USER 'victa_admin_1' IDENTIFIED BY 'admin_1';
 
+USE victa;
+INSERT INTO manager
+VALUES ("victa_admin_1", "admin_1", "kamalanath", "077-6036776");
+
 GRANT 'victa_admin' TO 'victa_admin_1';
 FLUSH PRIVILEGES;
 

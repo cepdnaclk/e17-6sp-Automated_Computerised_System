@@ -8,7 +8,7 @@ import AddProduct from "../components/manager/AddProduct";
 import AddShops from "../components/manager/AddShops";
 
 //import useState hook to create menu collapse state
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 //import react pro sidebar components
 import {
@@ -35,8 +35,12 @@ import { BiCog } from "react-icons/bi";
 //import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
 import "../styles/sideBar.css";
+import AuthContext from "../store/AuthContext";
 
 const ManagerPage = () => {
+
+  const authCtx = useContext(AuthContext);
+
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
 
@@ -47,7 +51,7 @@ const ManagerPage = () => {
   };
 
   /********************************************************************************************************/
-  const [renderedItem, setRenderedItem] = useState(<Production/>);
+  const [renderedItem, setRenderedItem] = useState(<Predictions/>);
   const [menuItem1, setMenuItem1] = useState(true);
   const [menuItem2, setMenuItem2] = useState(false);
   const [menuItem3, setMenuItem3] = useState(false);
@@ -147,6 +151,7 @@ const ManagerPage = () => {
     setMenuItem6(false);
     setMenuItem7(false);
     setMenuItem8(true);
+    authCtx.setLogout();
   }
 
   return (

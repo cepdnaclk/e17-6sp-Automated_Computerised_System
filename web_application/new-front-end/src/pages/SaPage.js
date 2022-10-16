@@ -1,7 +1,7 @@
 import Pending from "../components/sales_agent/Pending";
 import Deliver from "../components/sales_agent/Deliver";
 //import useState hook to create menu collapse state
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 //import react pro sidebar components
 import {
@@ -28,8 +28,12 @@ import { BiCog } from "react-icons/bi";
 //import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
 import "../styles/sideBar.css";
+import AuthContext from "../store/AuthContext";
 
 const SaPage = () => {
+
+  const authCtx = useContext(AuthContext);
+
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
 
@@ -63,6 +67,7 @@ const SaPage = () => {
     setMenuItem1(false);
     setMenuItem2(false);
     setMenuItem3(true);
+    authCtx.setLogout();
   }
 
   return (

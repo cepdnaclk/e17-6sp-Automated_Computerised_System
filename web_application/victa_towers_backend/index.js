@@ -7,7 +7,11 @@ const shop = require('./routes/shop');
 const distributedProduct = require('./routes/disProduct');
 const issuedProduct = require('./routes/issueProduct');
 
+const cors = require('cors');
+
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 

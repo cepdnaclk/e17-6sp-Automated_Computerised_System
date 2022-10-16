@@ -4,7 +4,7 @@ import Pending from "../components/distribution_manager/Pending";
 import Errored from "../components/distribution_manager/Errored";
 
 //import useState hook to create menu collapse state
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 //import react pro sidebar components
 import {
@@ -23,16 +23,18 @@ import {
   FiLogOut,
   FiArrowLeftCircle,
   FiArrowRightCircle,
-  FiBookOpen
 } from "react-icons/fi";
 import { RiPencilLine } from "react-icons/ri";
-import { BiCog } from "react-icons/bi";
 
 //import sidebar css from react-pro-sidebar module and our custom css
 import "react-pro-sidebar/dist/css/styles.css";
 import "../styles/sideBar.css";
+import AuthContext from "../store/AuthContext";
 
 const DmPage = () => {
+
+  const authCtx = useContext(AuthContext);
+
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
 
@@ -88,6 +90,7 @@ const DmPage = () => {
     setMenuItem3(false);
     setMenuItem4(false);
     setMenuItem5(true);
+    authCtx.setLogout();
   }
   return (
     <React.Fragment>
